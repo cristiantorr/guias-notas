@@ -1,0 +1,36 @@
+Pasos para instalar NVM en Windows
+Descarga el instalador:
+
+Ve al repositorio de nvm-windows.
+Descarga el archivo .zip más reciente (por ejemplo, nvm-setup.zip).
+Extrae el contenido del archivo .zip.
+Ejecuta el instalador:
+
+Haz doble clic en nvm-setup.exe para iniciar la instalación.
+Sigue las instrucciones en pantalla.
+Configura NVM:
+
+Durante la instalación, se te preguntará la ubicación de la instalación de Node.js y NVM. Puedes usar las ubicaciones predeterminadas o elegir las que prefieras.
+Verifica la instalación:
+
+Abre una nueva ventana de Command Prompt (cmd) o PowerShell.
+Escribe el siguiente comando para verificar que NVM se ha instalado correctamente:
+bash
+Copiar código
+nvm --version
+Uso de NVM en Windows
+Una vez instalado, puedes usar NVM para instalar y gestionar versiones de Node.js. Por ejemplo:
+
+Para instalar una versión específica de Node.js:
+
+bash
+Copiar código
+nvm install 14.17.0
+Para usar una versión instalada:
+
+bash
+Copiar código
+nvm use 14.17.0
+
+listar nvm
+nvm list

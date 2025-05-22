@@ -1,0 +1,84 @@
+mkdir proyecto-prisma
+cd proyecto-prisma
+npm init -y
+npm install express prisma @prisma/client mysql2
+npx prisma init
+
+nodemo: Monitorea los archivos de tu proyecto y reinicia automáticamente el servidor cada vez que detecta un cambio. Así no tienes que parar y volver a correr node index.js cada vez que editas tu código.
+
+* Instalar nodemon: npm install --save-dev nodemon
+- Agregamos script :
+"scripts": {
+  "dev": "nodemon index.js"
+}
+
+* EJECUTAMOS LA APLICACIÓN :
+- npm run dev
+
+
+* En el archivo .env configurarlo:
+DATABASE_URL="mysql://user:userpassword@localhost:3306/mydatabase?schema=public"
+SHADOW_DATABASE_URL="mysql://user:userpassword@localhost:3306/shadowdb"
+
+tener en cuenta que tengamos creada la base de datos mydatabase y shadowdb
+
+* Creamos el archivo index.js :
+
+const express = require('express');
+const { PrismaClient } = require('@prisma/client');
+const app = express();
+const prisma = new PrismaClient();
+
+app.use(express.json());
+/* 
+app.get('/users', async (req, res) => {
+  const users = await prisma.user.findMany();
+  res.json(users);
+});
+
+app.post('/users', async (req, res) => {
+  const { name, email } = req.body;
+  const user = await prisma.user.create({
+    data: { name, email }
+  });
+  res.json(user);
+}); */
+
+app.listen(3000, () => {
+  console.log('Servidor corriendo en http://localhost:3000');
+});
+
+* En la carperta prisma configuramos el archivo schema.prisma
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+
+}
+
+model User {
+  id    Int    @id @default(autoincrement())
+  name  String
+  email String @unique
+}
+
+
+
+* Ejecutamos el comando: npx prisma migrate dev --name NOMBRE-DE-LA-MIGRACION
+
+luego:
+ - npx prisma generate
+
+si sale error verificar el docker o la base de datos los permisos de los usuarios.

@@ -1,0 +1,83 @@
+ 
+ CREAR ARCHIVO DOCKERFILE
+ dockerfile
+ docker-compose.yml
+
+DARLE PRIVILEGIOS EN LA BASE DE DATOS CON 
+
+verificar ene l archivo docker-compose.yml la linea que dice  MYSQL_ROOT_PASSWORD: rootpassword , ingresamos ese password "rootpassword"
+
+ejecutamos: 
+docker exec -it mysql_prisma mysql -uroot -p
+luego ingresamos el password "rootpassword"
+
+luego le damos privilegios:
+- GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost:8082' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+ 
+ ENTRAR EN CUALQUIER CONTIENEDOR:
+  docker exec -it (nombre_del_contenedor)
+ EJEMPLO: docker exec -it nginx /bin/bash
+
+ 
+ Cambiar la propiedad de los archivos
+Si los archivos son propiedad de root, puede ser necesario cambiar la propiedad de los archivos a un usuario que Nginx pueda usar para acceder a ellos (por ejemplo, www-data o nginx).
+
+Si el usuario con el que corre Nginx es www-data (lo puedes verificar ejecutando whoami dentro del contenedor), entonces cambia la propiedad de los archivos a www-data para que Nginx pueda acceder a ellos:
+
+
+chown -R www-data:www-data /var/www/html
+
+Identificar el nombre o ID del contenedor
+Primero, necesitas identificar el nombre o ID del contenedor al que deseas acceder. Puedes hacerlo con el siguiente comando:
+
+docker ps
+
+
+
+Navegar y revisar archivos dentro del contenedor
+Una vez dentro del contenedor, puedes explorar el sistema de archivos, verificar que los archivos están en su lugar y realizar otros ajustes. Por ejemplo, para ver los archivos dentro de /var/www/html, puedes usar:
+
+
+ls /var/www/html
+
+VER PERMISOS DE UNA ARCHIVO EN docker
+ls -l /var/www/html
+
+restablecer nginx 
+
+docker restart nginx
+
+Detener y eliminar los contenedores (hacer "down")
+Primero, si tienes contenedores en ejecución con Docker Compose, puedes detenerlos y eliminarlos con el siguiente comando:
+
+docker-compose down
+
+
+Volver a ejecutar los contenedores (hacer "up")
+Después de haber detenido los contenedores, puedes volver a ejecutar los contenedores con el siguiente comando:
+
+docker-compose up
+
+si quierer ejecutar cualquier contenedor nos metemos a la carpeta del proyecto ejemplo /docker/docker-basico
+y ejecutamos el siguiente comando:
+docker-compose up -d
+
+siquieres ejecutar el contenedor de mysql y phpmyadmin o cualquier otro contenedor ejecutamos el siguiente comando:
+$ docker-compose up -d mysql phpmyadmin
+
+Si alguna vez necesitas detener y reiniciar solo los contenedores sin eliminar los volúmenes o redes, puedes usar los siguientes comandos también:
+
+Detener contenedores sin eliminar:
+
+
+docker-compose stop
+Iniciar los contenedores detenidos:
+
+
+docker-compose start
+
+Limpiar la caché de Docker:
+
+docker builder prune

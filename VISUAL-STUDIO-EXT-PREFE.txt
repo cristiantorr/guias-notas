@@ -1,0 +1,11 @@
+* settings.json : Poner prettier como formato de codigo
+* EXTESIONES : 
+  - live server
+  - monokai
+  - one dark Poner
+  - Astro
+  - Codesnap
+  - composer
+  - Eslint
+  - image preview
+  

@@ -1,0 +1,138 @@
+
+* PROGRAMAS DE IA PARA PROGRAMADORES:
+
+1. GitHub Copilot – Autocompletado de código inteligente.
+   https://github.com/features/copilot
+2. Tabnine – Asistente de programación con IA.
+   https://www.tabnine.com/
+3. CodeWhisperer (Amazon) – IA para mejorar productividad en la codificación.
+   https://aws.amazon.com/codewhisperer/
+4. Replit Ghostwriter – Editor de código con IA integrada.
+   https://replit.com/ghostwriter
+5. CodiumAI – Genera pruebas automáticas para el código.
+   https://www.codium.ai/
+6. MutableAI – Refactorización y generación de código.
+   https://www.mutable.ai/
+7. AskCodi – Asistente conversacional para codificación.
+   https://www.askcodi.com/
+8. Kite – Autocompletado basado en IA.
+   https://www.kite.com/
+9. Phind – IA para responder preguntas técnicas y de programación.
+   https://www.phind.com/
+10. Blackbox AI – Busca y genera fragmentos de código.
+   https://www.useblackbox.io/
+
+* PROGRAMAS DE IA PARA VOZ:
+
+1. ElevenLabs – Clonación y generación de voz hiperrealista.
+   https://www.elevenlabs.io/
+2. PlayHT – Voz generada por IA con gran calidad.
+   https://play.ht/
+3. Resemble AI – Genera voces personalizadas.
+   https://www.resemble.ai/
+4. Murf AI – Conversión de texto a voz para presentaciones.
+   https://murf.ai/
+5. LOVO AI – Plataforma de voz para contenido multimedia.
+   https://www.lovo.ai/
+6. Descript (Overdub) – Edición de audio con clonación de voz.
+   https://www.descript.com/overdub
+7. Speechify – Lee textos en voz alta con voces naturales.
+   https://speechify.com/
+8. Voicemod – Modificador de voz en tiempo real.
+   https://www.voicemod.net/
+9. Replica Studios – Voces para videojuegos y narrativas.
+   https://replicastudios.com/
+10. iSpeech – Generación de voz y TTS.
+   https://www.ispeech.org/
+
+* PROGRAMAS DE IA PARA TEXTO:
+
+1. ChatGPT – Generación de texto conversacional.
+   https://chat.openai.com/
+2. Jasper – Marketing de contenido con IA.
+   https://www.jasper.ai/
+3. Copy.ai – Redacción para marketing y redes.
+   https://www.copy.ai/
+4. Writesonic – Generador de contenido variado.
+   https://writesonic.com/
+5. Sudowrite – Asistente para escritores creativos.
+   https://www.sudowrite.com/
+6. INK – Optimización de textos para SEO.
+   https://inkforall.com/
+7. Rytr – Generador rápido de contenido.
+   https://rytr.me/
+8. Notion AI – Redacción, resumen y reescritura de textos.
+   https://www.notion.so/product/ai
+9. HyperWrite – Herramienta de redacción y sugerencias inteligentes.
+   https://www.hyperwriteai.com/
+10. Quillbot – Reescritura y mejora de texto.
+   https://quillbot.com/
+
+* PROGRAMAS DE IA PARA IMÁGENES:
+
+1. Ideogram – Generador de imágenes con texto integrado.
+   https://ideogram.ai/t/explore
+2. Napkin – Visualización de ideas con IA.
+   https://www.napkin.ai/
+3. Midjourney – Generación de imágenes artísticas.
+   https://www.midjourney.com/
+4. DALL·E – Imágenes a partir de texto.
+   https://openai.com/dall-e
+5. Stable Diffusion – Motor de generación de imágenes.
+   https://stability.ai/
+6. Leonardo AI – Diseño creativo y arte.
+   https://leonardo.ai/
+7. Canva (IA integrada) – Diseño con generación automática.
+   https://www.canva.com/
+8. Runway ML – Imagenes y videos.
+   https://runwayml.com/
+9. Artbreeder – Mezcla de imágenes por IA.
+   https://www.artbreeder.com/
+10. Deep Dream Generator – Efectos artísticos generados por IA.
+   https://deepdreamgenerator.com/
+
+* PROGRAMAS DE IA PARA VIDEOS:
+
+1. Runway ML – Edición y generación de video con IA.
+   https://runwayml.com/
+2. Pictory – Crea videos a partir de textos.
+   https://pictory.ai/
+3. Synthesia – Videos con avatares y voz IA.
+   https://www.synthesia.io/
+4. Lumen5 – Videos para marketing y redes.
+   https://www.lumen5.com/
+5. Descript – Edición de video como si fuera texto.
+   https://www.descript.com/
+6. Kaiber – Convierte imágenes y texto en videos animados.
+   https://www.kaiber.ai/
+7. Animoto – Videos automáticos para redes y presentaciones.
+   https://animoto.com/
+8. Fliki – Videos desde textos con voz IA.
+   https://fliki.ai/
+9. DeepBrain AI – Crea presentadores de noticias virtuales.
+   https://www.deepbrain.io/
+10. Veed.io – Edición y subtitulado con herramientas de IA.
+   https://www.veed.io/
+
+* PROGRAMAS PARA AVATAR:
+
+1. Heygen – Avatares realistas para presentaciones.
+   https://www.heygen.com/
+2. Synthesia – Avatares para video corporativo y educativo.
+   https://www.synthesia.io/
+3. Ready Player Me – Avatares 3D personalizables.
+   https://readyplayer.me/
+4. ZMO.ai – Modelos humanos generados por IA.
+   https://www.zmo.ai/
+5. Reallusion Character Creator – Creación de personajes 3D.
+   https://www.reallusion.com/character-creator/
+6. Toongineer Cartoonizer – Avatares estilo caricatura.
+   https://www.vanceai.com/toongineer/
+7. Avatarify – Anima tu rostro en videollamadas.
+   https://github.com/alievk/avatarify
+8. Inworld AI – Avatares con inteligencia emocional.
+   https://www.inworld.ai/
+9. Voki – Avatares educativos para aulas.
+   https://www.voki.com/
+10. Bitmoji – Crea tu avatar estilo cómic para redes.
+   https://www.bitmoji.com/

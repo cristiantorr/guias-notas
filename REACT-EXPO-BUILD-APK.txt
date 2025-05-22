@@ -1,0 +1,15 @@
+Documentación : https://docs.expo.dev/build/setup/
+
+PARA CREAR LA BUILD APK
+
+Instalar
+- npm install -g eas-cli
+
+Logearse 
+- eas login
+
+Crear la build 
+- eas build --platform android
+
+bundletool build-apks --bundle=C:\Users\User\Desktop\proyectos-personales\curso-react-native-metacritic-app\application-50e6cee1-aba9-4df7-a06f-b48488447af8.aab --output=/C:\Users\User\Desktop\proyectos-personales\curso-react-native-metacritic-app/my_application-50e6cee1-aba9-4df7-a06f-b48488447af8.aabapp.apks
+

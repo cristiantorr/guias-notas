@@ -1,0 +1,148 @@
+
+- SI NO TE DEJA INSTALAR CON EL NORMAL DE EXPO HAY QUE INSTALAR ESTO GLOBAL CON EL SIGUIENTE COMANDO:
+  - npm install --global eas-cli
+
+* INSTALAR REACT NATIVE CON EL FRAMEWORK EXPO con la última versión:
+  - (con este comando se crea un proyecto con todas las dependencias, y archivos):
+
+    npx create-expo-app@latest 
+  
+  - ( Con este comando se creara un proyecto en blanco como un esqueleto con una plantilla vacía ) 
+
+  npx create-expo-app@latest curso-react-native-metacritic-app --template blank 
+
+
+* CORRER EL PROYECTO, POR RECOMENDACIÓN UTILIZAR EL PRIMER COMANDO YA QUE ES EL GLOBAL PARA ESCOGER EN QUE DISPOSITIVO LUEGO LO VAMOS A EJECUTAR, AUNQUE SE  PUEDE UTILIZAR DE UNA VEZ UN COMANDO PARA MOOBILE:
+
+   cd example-curso-react-native
+  - npm start
+  - npm run android
+  - npm run ios # you need to use macOS to build the iOS project - use the Expo app if you need to do iOS development without a Mac
+  - npm run web
+  - 
+
+* VAMOS HABER LA OPCIÓN DE WEB DESABILITADA SI LA QUEREMOS HABILITAR HAY QUE INSTALAR VARIAS DEPENDENCIAS QUE SON :
+  - npx expo install react-dom react-native-web @expo/metro-runtime
+
+* INSTALAR SLINT( errores potenciales, malas prácticas o posibles problemas de lógica. ) Y PRETTIER (Espaciado, comillas, saltos de línea, etc)
+ -DIFERENCIAS ENTRE PRETIER Y ESLINT:
+  --- Prettier: Es una herramienta enfocada en formatear el código automáticamente, asegurándose de que el estilo sea consistente (espaciado, comillas, saltos de línea, etc.). Prettier se encarga de formatear tu código según reglas predefinidas de estilo, pero no detecta errores de lógica o problemas de calidad del código, como lo hace ESLint.
+
+   ---  ESLint: Es un linter que revisa el código en busca de errores potenciales, malas prácticas o posibles problemas de lógica. Además, puede ser configurado para forzar ciertas convenciones de estilo, pero su propósito principal es identificar problemas en el código, como variables no utilizadas o errores de sintaxis.
+
+- Para instalar los dos primero eslint con el siguiente comando:
+  - npx expo lint
+- Para instalar prettier con el siguiente comando:
+  - npx expo install -- --save-dev prettier eslint-config-prettier eslint-plugin-prettier
+
+
+* CONFIGURACIÓN ARCHIVO .eslintrc DE NUESTRO PROYECTO:
+
+// https://docs.expo.dev/guides/using-eslint/
+module.exports = {
+  extends: ["expo", "prettier"], // Extendemos expo de prettier
+  plugins: ["prettier"], // Agregamos prettier como plugin
+  // Agregamos en reglas, que todas las reglas de prettier nos den un error
+  rules: {
+    "pretier/prettier": "error",
+  },
+};
+
+
+* ANOTACIONES CÓDIGO:
+
+-- IMÁGENES: 
+
+- No se manejan etiquetas html todo son componentes ejemplo: <Image />, <View><View /> etc, en la documentación se ven.
+- Para imágenes se utiliza import icon from "./assets/icon.png"; o se puede utilizar const icon = require("./assets/icon.png"); luego se usa 
+<Image
+        source={icon}
+        style={{ width: 200, height: 100, resizeMode: "center" }}
+/>
+
+- También se puede utilizar imágenes externas ejemplo:
+ <Image
+  source={{
+    uri: "https://www.metacritic.com/a/img/resize/3a65ba1dd9590573774ad33a39c52384174cb796/catalog/provider/6/3/6-1-4763-13.jpg?auto=webp&fit=cover&height=300&width=200",
+  }}
+  style={{ width: 200, height: 100, resizeMode: "center" }}
+/>
+
+-- BOTONES
+
+- Los botones siempre van hacer los nativos de la plataforma andriod o IOS, no se pueden cambiar su tamaño ni nada, pero si con la propiedad color ejemplo:
+ <Button color="red" title="Pulsa aquí" onPress={() => alert("Hola")} />
+
+- Para hacer botones con imágenes, colores y más cosas hay un componente que se llama TouchableHighLight, lo importamos y lo usuamos, también buscamos los atributos que se le pueden poner como el underlaycolor,que es el color que se pone el bottón luego de darle click ejemplo: 
+
+ <TouchableHighlight underlayColor={"#09f"} onPress={() => alert("hola")}>
+        <Text style={{ color: "white" }}>Pulsa TouchableHighlight</Text>
+      </TouchableHighlight>
+
+- Existen otros componentes para el botón como TouchableNativeFeedback, TouchableOpacity
+- Si queremos una forma mejor de utilizar botones es mejor utilizar el componente Pressable
+<Pressable onPress={onPressFunction}>
+  <Text>I'm pressable!</Text>
+</Pressable>
+
+- Otr ejemplo :
+
+<Pressable
+  onPress={() => {}}
+  style={({ pressed }) => [
+    {
+      backgroundColor: pressed ? "rgb(210, 230, 255)" : "white",
+    },
+    styles.wrapperCustom,
+  ]}
+>
+  {({ pressed }) => (
+    <Text
+      style={{
+        fontSize: pressed ? 32 : 16,
+      }}
+    >
+      {pressed ? "Pressed!" : "Press Me"}
+    </Text>
+  )}
+</Pressable>
+
+-- ESTADOS useEState:  un estado que cada vez que cambia de valor se vuelve a renderizar el componente y así refleja los cambios
+-- ESTADOS useEffect: Cada vez que cambian las dependencias -> }, []); si existen, o cada vez que se renderiza el componente este useEffect se ejecuta 1 vez. Como no hay dependencias en el array solo se ejecutara 1 vez
+
+* COMPONENTE PARA EL SCROLL:
+  - ScrollView : Lo importamos y luego lo usamos dentro del código
+        <ScrollView>
+        {games.map((game) => (
+          <View key={game.name} style={styles.card}>
+            <Image
+              source={{ uri: game.image }}
+              style={{ width: 109, height: 147, borderRadius: 10 }}
+            ></Image>
+            <Text style={styles.title}>{game.name}</Text>
+          </View>
+        ))}
+</ScrollView>
+
+* COMPONENTE PARA QUE EL CONTENIDO NO SE PONGA ENCIMA DEL STATUS BAR , PERO SOLO SIRVE PARA IOS Y NO PARA ANDROI:
+
+  --   <SafeAreaView> EJEMPLO 
+
+  <SafeAreaView style={{ margin: 12 }}>
+        <ScrollView>
+          {games.map((game) => (
+            <View key={game.name} style={styles.card}>
+              <Image source={{ uri: game.image }} style={styles.image}></Image>
+              <Text style={styles.title}>{game.name}</Text>
+            </View>
+          ))}
+        </ScrollView>
+      </SafeAreaView>
+
+* INSTALACIÓN DE CONSTANTES DE EXPO : Nos permiten acceder a información del dispositivo y más cosas :
+  - comando:  npx expo install expo-constants
+
+* INSTALACIÓN DEL SAFE AREA PARA EL DISPOSITIVO Y QUE SE SOLUCIONA TANTO PARA ANDROI COMO IOS LO DEL DISPOSITIVO ARRIBA Y ABAJO DEL AREA PARA QUE EL CONTENIDO NO ESTE ENCIMA DEL STATUS BAR NI ABAJO DEL FINAL.
+  --comando: npx expo install react-native-safe-area-context
+  -- COMPONENTE SafeAreaProvider: Podemos inyectar información desde diferentes partes
+  -- Instalado el npx expo install react-native-safe-area-context Usamos el hook useSafeAreaInsets : para saber la información de los espacios de arriba y abajo en el dispositivo

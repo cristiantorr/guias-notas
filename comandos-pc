@@ -1,0 +1,6 @@
+Eliminar carpetas
+
+rm -rf nombre_de_la_carpeta
+
+
+

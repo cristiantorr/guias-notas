@@ -1,0 +1,80 @@
+
+Guía de Testing y Automatización para Desarrolladores Web
+=========================================================
+
+Introducción
+------------
+El testing y la automatización son prácticas esenciales en el desarrollo moderno.
+Permiten asegurar la calidad del software, prevenir errores y reducir tiempos de entrega.
+
+Tipos de Testing
+----------------
+1. Testing Unitario (Unit Testing)
+   - Prueba funciones individuales de forma aislada.
+   - Herramientas: Jest (JavaScript), Mocha, PyTest (Python).
+
+2. Testing de Integración
+   - Prueba múltiples unidades funcionando juntas.
+   - Ejemplo: validar que un componente consuma correctamente una API.
+
+3. Testing End-to-End (E2E)
+   - Simula la interacción del usuario con la aplicación.
+   - Herramientas: Cypress, Playwright, Selenium.
+
+4. Testing de Componentes (Frontend)
+   - Prueba componentes UI de forma aislada.
+   - Herramientas: Testing Library (React, Vue, etc.)
+
+Herramientas Populares
+----------------------
+- Jest: testing unitario en JavaScript.
+- Testing Library: pruebas de componentes de React/Vue.
+- Cypress: pruebas E2E visuales.
+- Playwright: E2E con más control y soporte multibrowser.
+- Selenium: automatización de navegadores, usado en entornos más antiguos o corporativos.
+
+Ejemplos
+--------
+
+1. Test Unitario con Jest (JavaScript)
+--------------------------------------
+function suma(a, b) {
+  return a + b;
+}
+
+test('suma 1 + 2 es igual a 3', () => {
+  expect(suma(1, 2)).toBe(3);
+});
+
+2. Test de Componente con React Testing Library
+-----------------------------------------------
+import { render, screen } from '@testing-library/react';
+import Boton from './Boton';
+
+test('renderiza el texto del botón', () => {
+  render(<Boton label="Click aquí" />);
+  expect(screen.getByText('Click aquí')).toBeInTheDocument();
+});
+
+3. Test E2E con Cypress
+------------------------
+describe('Página de inicio', () => {
+  it('debe mostrar el título principal', () => {
+    cy.visit('http://localhost:3000');
+    cy.contains('Bienvenido').should('be.visible');
+  });
+});
+
+Consejos Finales
+----------------
+- Automatiza pruebas críticas como login, formularios y flujos principales.
+- Usa CI/CD (como GitHub Actions) para ejecutar tests automáticamente al hacer push.
+- Escribe tests al crear componentes nuevos, no al final del desarrollo.
+
+Recursos Recomendados
+---------------------
+- https://testing-library.com/
+- https://jestjs.io/
+- https://www.cypress.io/
+- https://playwright.dev/
+

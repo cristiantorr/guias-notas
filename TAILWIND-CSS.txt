@@ -1,0 +1,14 @@
+* INSTALAR: npm install tailwindcss @tailwindcss/vite
+* ARCHIVO VITE.CONFIG.JS
+  import { defineConfig } from 'vite'
+  import tailwindcss from '@tailwindcss/vite'
+  export default defineConfig({
+    plugins: [
+      tailwindcss(),
+    ],
+  })
+
+* IMPORTAR TAILWIND EN EL ARCHIVO CSS:
+@import "tailwindcss";
+
+VOLVER A EJECUTAR npm run dev

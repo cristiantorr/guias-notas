@@ -1,0 +1,62 @@
+* Crear proyecto
+npm create astro@latest
+
+* Empezar proyecto
+npm run dev
+
+* Instalar tailwind 
+npx astro add tailwind
+
+* Los console.log verlos en las terminales
+
+* Para limpiar cache o deprono no encuentra los tipos y salen errores ejecutar  ejemplo:
+
+AQUÍ SALE ERROR EN EL PARAMETRÓ book , porque no encuentra el tipo de datos
+  return books.map((book) => ({
+   
+    params: { id:book.slug },
+    props: { book },
+  }));
+}
+
+entonces se ejecuta otra vez este comando:
+npx astro sync
+
+* SERVER ESLAND 
+
+Significa que podemos usar el componente solo en el lado del servidor, no en el lado del cliente.
+ejemplo: server:defer , significa que todo va ser estatico menos este componente que se ejecuta con el servidor y no con el cliente.
+
+  <BookScore server:defer id={slug}>
+        <span slot="fallback" class="text-xs opacity-70">Cargando puntuación...</span>
+      </BookScore>   
+
+* SI SALE EL ERROR GETSTATICTSPATHS LAS ROUTAS DINAMICAS
+
+HAY QUE PONER EEN EL ARCCHIVO astro.config.mjs la opción   output: 'server',
+
+export default defineConfig({
+    output: 'server',
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  env: {
+    schema: {
+      SHOW_BUY_BUTTON: envField.boolean({
+        default: true,
+        context: "server",
+        access: "public",
+      }),
+      SCORE_API_ENDPOINT: envField.string({
+        context: "server",
+        access: "public",
+      }),
+    },
+  },
+});
+ 
+
+
+
+- 

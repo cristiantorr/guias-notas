@@ -1,0 +1,93 @@
+MCP (conten model protocol) IA:
+
+Comunicación en el cliente ques es una inteligencia artificial como windsurf. clude. cursor, chat gpt, y con un MCP puedo enseñarle tareas nuevas , como hacer carpetas, archivos, conexiones ha api, conexiones a bases de datos y sacar datos de una base de datos.
+
+* Activar el modo agente
+
+* Hacer un MCP para wordpress donde pueda consultar datos, como usuarios, posts etc.
+
+
+* Se crea carpeta , y un archivo main.ts, lo vamos hacer con typescript
+* Se ejecuta npm init para el package.json
+  - se agreg "type" : "module", ejemplo de archivo: 
+  - {
+  "name": "01-start",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",       
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0",
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3",
+    "zod": "^3.24.2"
+  }
+}
+
+* Instalamos la dependencia https://github.com/modelcontextprotocol/typescript-sdk
+  -npm install @modelcontextprotocol/sdk
+
+* Instalamos El comando npm install zod instala la librería Zod, una herramienta de validación y definición de esquemas en TypeScript y JavaScript.
+  - npm install zod
+
+* En el archivo main.ts,importamos las dependencias
+
+- import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+- import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+- import { z } from "zod";
+
+* Se puede ejecutar el archivo ts con https://tsx.is/
+ - npx -y tsx main.ts
+
+ * Conectamos el servidor 
+ - const transport = new StdioServerTransport()
+ - await server.connect(transport)
+ 
+
+* Instalar inspector :  npx -y @modelcontextprotocol/inspector , podemos probar los mcp de una manera más rapida.
+
+EJEMPLO DE COMO DEBERÍA QUEDAR EL ARCHIVIO MAIN.TS
+
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { z } from "zod";
+
+const server = new McpServer({
+  name: 'Nombre de tu servicio',
+  version: '1.0.0',
+})
+
+server.tool(
+  'nombre-de-tu-herramienta',
+  'Descripción de lo que hace tu herramienta',
+  {
+    // Define los parámetros que necesita tu herramienta
+    parametro: z.string().describe('Descripción del parámetro'),
+  },
+  async ({ parametro }) => {
+    try {
+      // Tu lógica aquí
+      return {
+        content: [{
+          type: 'text',
+          text: 'Tu respuesta aquí'
+        }]
+      };
+    } catch (error) {
+      return {
+        content: [{
+          type: 'text',
+          text: `Error: ${error.message}`
+        }]
+      };
+    }
+  }
+)
+
+const transport = new StdioServerTransport()
+await server.connect(transport)

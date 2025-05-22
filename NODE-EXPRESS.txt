@@ -1,0 +1,81 @@
+
+Es importante no dejar las credenciales de la base de datos en el código fuente. Considera usar variables de entorno para manejar la configuración sensible, especialmente en un entorno de producción. Aquí hay un ejemplo usando el paquete dotenv para cargar configuraciones desde un archivo .env:
+
+Instalar dotenv:
+
+npm install dotenv
+Crear un archivo .env en la raíz de tu proyecto:
+
+DB_HOST=127.0.0.1
+DB_USER=user
+DB_PASSWORD=userpassword
+DB_NAME=mydatabase
+Cargar las variables en tu index.js:
+js
+
+require("dotenv").config(); // Cargar las variables de entorno
+
+const db = mysql.createConnection({
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+});
+
+Rutas en el ervidor y conexión basica 
+
+const express = require("express");
+const mysql = require("mysql2"); //  MySQL 8.0 y versiones posteriores usan un nuevo modo de autenticación llamado caching_sha2_password, que no es compatible de manera predeterminada con algunas versiones de clientes MySQL, como MySQL 8 menor para abajo.
+const app = express();
+const port = 3001;
+
+// SE UTILIZA CORS PARA PERMITIR QUE EL FRONTEND PUEDA USAR LA API
+const cors = require("cors");
+
+const db = mysql.createConnection({
+  host: "127.0.0.1",
+  user: "root",
+  password: "",
+  database: "empleados_crud",
+});     
+
+db.connect((err) => {
+  if (err) {
+    console.error("Error al conectar con la base de datos", err);
+  } else {
+    console.log("Conexión establecida con la base de datos");
+  }
+});
+
+app.get("/empleados/agregarEmpleado", (req, res) => {
+  // Datos predefinidos (quemados)
+  const nuevoEmpleado = {
+    Username: "Cristian",
+    Age: 34,
+    Country: "Colombia",
+    Position: "Desarrollador web",
+    Experience: 10,
+  };
+
+  db.query("INSERT INTO empleados SET ?", nuevoEmpleado, (err, results) => {
+    if (err) {
+      console.error("Error al insertar en la base de datos", err);
+      return res
+        .status(500)
+        .json({ error: "Hubo un error al agregar el empleado" });
+    } else {
+      console.log("Empleado agregado exitosamente");
+      res.status(201).json({
+        message: "Empleado agregado correctamente",
+        empleadoId: results.insertId, // ID del nuevo empleado insertado
+      });
+    }
+  });
+});
+
+app.listen(port, () => {
+  console.log(`Servidor corriendo en el puerto ${port}`);
+});
+
+- podemor acceder en el navegador ejecutando primero el comando: node app.js o el archivo que tenga la conexión con la base de datos y rutas.
+- Luego accedemos a la ruta http://localhost:3001/empleados y veremos los datos que tenemos en la base de datos en la terminal 

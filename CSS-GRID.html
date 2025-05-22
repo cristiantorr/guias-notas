@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial CSS Grid: Cada propiedad explicada</title>
+  <style>
+    /* Reseteamos márgenes y padding para que no interfieran */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    section {
+      margin: 20px;
+    }
+
+    /* General para los contenedores de los ejemplos */
+    .container {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .item {
+      background-color: lightblue;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #000;
+    }
+
+    /* Para los contenedores con más de una fila o columna */
+    .container-multiple-items {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 100px 100px;
+    }
+
+    /* Contenedor para ejemplo de grid-template-areas */
+    .container-areas {
+      grid-template-areas: "header header header"
+                           "sidebar content content"
+                           "footer footer footer";
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Tutorial CSS Grid - Explicación de cada propiedad</h1>
+
+  <!-- Ejemplo 1: display: grid -->
+  <section>
+    <h2>1. display: grid</h2>
+    <p>La propiedad <strong>display: grid</strong> convierte el contenedor en un grid container, habilitando el uso de propiedades de grid en sus elementos hijos.</p>
+    <div class="container" style="grid-template-columns: 1fr 1fr;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+    </div>
+    <p>En este caso, tenemos dos columnas de igual tamaño porque hemos definido <code>grid-template-columns: 1fr 1fr</code>.</p>
+  </section>
+
+  <!-- Ejemplo 2: grid-template-columns -->
+  <section>
+    <h2>2. grid-template-columns</h2>
+    <p>La propiedad <strong>grid-template-columns</strong> define cuántas columnas tendrá el grid y su tamaño. Usamos unidades como px, %, fr, etc.</p>
+    <div class="container container-multiple-items">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+    </div>
+    <p>El contenedor tiene tres columnas (1fr cada una), gracias a <code>grid-template-columns: repeat(3, 1fr)</code>, y dos filas definidas con <code>grid-template-rows: 100px 100px</code>.</p>
+  </section>
+
+  <!-- Ejemplo 3: grid-template-rows -->
+  <section>
+    <h2>3. grid-template-rows</h2>
+    <p>La propiedad <strong>grid-template-rows</strong> define las filas del grid. Como en las columnas, puedes usar unidades como px, %, fr o auto.</p>
+    <div class="container" style="grid-template-rows: 150px 200px;">
+      <div class="item">Fila 1 (150px)</div>
+      <div class="item">Fila 2 (200px)</div>
+    </div>
+    <p>El grid tiene dos filas: la primera con 150px de altura y la segunda con 200px.</p>
+  </section>
+
+  <!-- Ejemplo 4: gap -->
+  <section>
+    <h2>4. gap</h2>
+    <p>La propiedad <strong>gap</strong> define el espacio entre los elementos dentro del grid. Es útil para mantener el espacio entre filas y columnas.</p>
+    <div class="container" style="grid-template-columns: 1fr 1fr; gap: 20px;">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+    </div>
+    <p>Aquí hemos añadido un espacio de 20px entre los elementos del grid usando <code>gap: 20px</code>.</p>
+  </section>
+
+  <!-- Ejemplo 5: grid-column -->
+  <section>
+    <h2>5. grid-column</h2>
+    <p>La propiedad <strong>grid-column</strong> especifica en qué columna comienza y termina un item. Esto permite que un item ocupe varias columnas.</p>
+    <div class="container container-multiple-items">
+      <div class="item" style="grid-column: 1 / 3;">Item 1 (Ocupa 2 columnas)</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+    </div>
+    <p>El primer item ocupa las dos primeras columnas gracias a <code>grid-column: 1 / 3</code>.</p>
+  </section>
+
+  <!-- Ejemplo 6: grid-row -->
+  <section>
+    <h2>6. grid-row</h2>
+    <p>La propiedad <strong>grid-row</strong> funciona de manera similar a <code>grid-column</code>, pero para las filas. Define dónde empieza y termina un item en el eje vertical.</p>
+    <div class="container container-multiple-items">
+      <div class="item" style="grid-row: 1 / 3;">Item 1 (Ocupa 2 filas)</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+    </div>
+    <p>El primer item ocupa las dos primeras filas, gracias a <code>grid-row: 1 / 3</code>.</p>
+  </section>
+
+  <!-- Ejemplo 7: grid-template-areas -->
+  <section>
+    <h2>7. grid-template-areas</h2>
+    <p>La propiedad <strong>grid-template-areas</strong> permite nombrar las áreas del grid. Hace que la disposición de los elementos sea más comprensible y visual.</p>
+    <div class="container container-areas" style="grid-template-columns: 1fr 2fr 1fr; grid-template-rows: 100px 200px;">
+      <div class="item" style="grid-area: header;">Header</div>
+      <div class="item" style="grid-area: sidebar;">Sidebar</div>
+      <div class="item" style="grid-area: content;">Content</div>
+      <div class="item" style="grid-area: footer;">Footer</div>
+    </div>
+    <p>En este ejemplo, hemos definido áreas: <code>grid-template-areas: "header header header" "sidebar content content" "footer footer footer";</code>. Los items se colocan automáticamente según el área que les asignamos.</p>
+  </section>
+
+  <!-- Ejemplo 8: grid-area -->
+  <section>
+    <h2>8. grid-area</h2>
+    <p>La propiedad <strong>grid-area</strong> se utiliza para colocar un item en una área específica del grid, previamente definida con <code>grid-template-areas</code>.</p>
+    <div class="container container-areas" style="grid-template-columns: 1fr 2fr 1fr; grid-template-rows: 100px 200px;">
+      <div class="item" style="grid-area: header;">Header</div>
+      <div class="item" style="grid-area: sidebar;">Sidebar</div>
+      <div class="item" style="grid-area: content;">Content</div>
+      <div class="item" style="grid-area: footer;">Footer</div>
+    </div>
+    <p>Usando <code>grid-area</code>, colocamos los items en las áreas definidas por <code>grid-template-areas</code>. Así, cada elemento se coloca en su área correspondiente como <code>header</code>, <code>sidebar</code>, etc.</p>
+  </section>
+
+  <footer>
+    <p>Fin del Tutorial CSS Grid</p>
+  </footer>
+
+</body>
+</html>

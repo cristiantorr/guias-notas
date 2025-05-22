@@ -1,0 +1,63 @@
+instalar plugin PROTECCIÓN API REST
+CODIGO EN EL FUNCTION
+
+function restringir_api_rest_a_usuarios_autenticados($access)
+{
+	// Permitir acceso solo si la solicitud tiene un JWT válido
+	if (!is_user_logged_in() && !isset($_SERVER['HTTP_AUTHORIZATION'])) {
+		return new WP_Error('rest_cerrado', 'El acceso a la API REST requiere autenticación.', array('status' => 401));
+	}
+	return $access;
+}
+
+add_filter('rest_pre_dispatch', 'restringir_api_rest_a_usuarios_autenticados');
+
+PARA PROTEGER LA API
+https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/#description
+AGREGAR EN EL HTACCESS
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+
+PONER EN EL WP-CONFIG 
+
+define('JWT_AUTH_SECRET_KEY', 'your-top-secret-key');
+define('JWT_AUTH_CORS_ENABLE', true);
+
+FUNCONES
+
+TRAER POSTS POR IDS DE ACF RELACIONADOS
+$args = array(
+		'post_type' => 'posts',
+		'numberposts' => -1,
+		'orderby' => 'title',
+		'order' => 'ASC',
+		'meta_query' => array(
+			array(
+				'key' => 'acf-field-name',
+				'value' => $ids,
+				'compare' => 'IN',
+			),
+		),
+	);
+
+	$posts = get_posts($args);
+
+----
+
+TRAER POSTS POR TAXONOMIA
+$args = array(
+		'post_type' => 'communities',
+		'numberposts' => -1,
+		'orderby' => 'title',
+		'order' => 'ASC',
+		'tax_query' => array(
+			array(
+				'taxonomy' => 'release_status',
+				'field' => 'slug',
+				'terms' => $status,
+			),
+		),
+	);
+
+// DRY FUNCIÓN PARA GET FIELD
+
+$get = fn($key) => get_field($key, $homedesigns->ID);

@@ -1,0 +1,98 @@
+* iNTALACIÓN CON VITE:
+  -  npm create vite@latest
+  - escogemos react
+
+* EJECUCIÓN:
+  -cd vamos-al-proyecto-que-instalamos
+  -npm install
+  -npm run dev
+
+* VALIDAR SI ESTAMOS EN ENTORNO DESARROLLO PARA QUITAR EL SRTICT MODE
+
+const isDevelopment = process.env.NODE_ENV != "development";
+
+createRoot(document.getElementById("root")).render(
+  isDevelopment ? (
+    <StrictMode>
+      <App />
+    </StrictMode>
+  ) : (
+    <App />
+  )
+);
+
+
+INSTALACIÓN TAILWIND
+npm install tailwindcss @tailwindcss/vite
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+})
+
+@import "tailwindcss";
+npm run dev
+
+* npm install --save-dev eslint prettier eslint-config-prettier 
+
+
+* EXPLICACIÓN USESTATE:
+
+EJEMPLO: const [timesPressed, setTimesPressed] = useState(0);
+
+1 useState(0):
+ - useState es un hook en React que permite añadir estado a un componente funcional.
+
+ - Recibe un valor inicial (en este caso, 0), que es el valor inicial del estado.
+
+ - El valor inicial puede ser cualquier tipo de dato: un número, un string, un objeto, etc. En este caso, es 0, un número.
+
+2 - Desestructuración del estado:
+ 
+ -const [timesPressed, setTimesPressed] es la desestructuración del valor que devuelve useState.
+ 
+ -timesPressed: es la variable de estado que guarda el valor actual del estado. En este caso, almacenará el número de veces que se ha presionado un botón, comenzando desde 0.
+ 
+ -setTimesPressed: es la función de actualización del estado. Esta función se usa para actualizar el valor de timesPressed cada vez que se quiera modificar.
+
+* EJEMPLO DE USO:
+  
+  - Supongamos que queremos contar cuántas veces un usuario presiona un botón. Podríamos hacerlo de la siguiente forma:
+
+import React, { useState } from 'react';
+
+const ButtonCounter = () => {
+  // Declaramos el estado 'timesPressed' con valor inicial 0
+  const [timesPressed, setTimesPressed] = useState(0);
+
+  // Función para manejar el clic
+  const handleClick = () => {
+    // Actualizamos el estado incrementando el valor
+    setTimesPressed(timesPressed + 1);
+  };
+
+  return (
+    <div>
+      <button onClick={handleClick}>
+        Has presionado el botón {timesPressed} veces
+      </button>
+    </div>
+  );
+};
+
+export default ButtonCounter;
+
+Explicación:
+ - Estado inicial: El estado timesPressed se inicializa en 0 al llamar a useState(0).
+- handleClick: Cada vez que se presiona el botón, se ejecuta la función 
+
+ - handleClick. Dentro de esta función, se actualiza el estado timesPressed utilizando setTimesPressed(timesPressed + 1). Esto incrementa el valor de timesPressed en 1 cada vez que el botón es presionado.
+
+- Visualización: El texto dentro del botón muestra cuántas veces se ha presionado, ya que se actualiza dinámicamente cada vez que el estado cambia.
+
+* En resumen:
+- timesPressed es el estado que almacena cuántas veces se presionó el botón.
+
+- setTimesPressed es la función que modifica el estado de timesPressed cuando el usuario presiona el botón.

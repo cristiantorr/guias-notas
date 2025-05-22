@@ -1,0 +1,82 @@
+Agregar un campo honeypot.
+
+1. Cómo agregar el honeypot al HTML del formulario Mailchimp
+Agrega este campo invisible (que los humanos no llenarán, pero los bots sí):
+<form action="https://pureblink.us14.list-manage.com/subscribe/post?u=92e910acf81f11f01914c62c5&id=34077f5dd7&f_id=0031b9e5f0" method="post" target="_blank" novalidate>
+  <label for="email">Email:</label>
+  <input type="email" name="EMAIL" id="email" required>
+
+  <!-- Honeypot field -->
+  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+    <label for="company">Nombre de empresa:</label>
+    <input type="text" name="COMPANY_BOT_FIELD" tabindex="-1" autocomplete="off">
+  </div>
+
+  <button type="submit">Request Demo</button>
+</form>
+
+¿Qué hace Mailchimp con ese campo?
+Mailchimp sí recibe el valor aunque no lo uses como campo visible en tu lista.
+
+Si el campo se llena con algún valor, puedes filtrar manualmente esos registros sospechosos
+
+
+3. Cómo filtrar estos registros dentro de Mailchimp
+🔍 Filtrar contactos "sospechosos" por ese campo:
+Ve a Audience > All contacts.
+
+Haz clic en Create a segment.
+
+Crea una regla:
+
+COMPANY_BOT_FIELD → is not blank
+
+Guarda este segmento como "Spam sospechoso".
+
+Este segmento contendrá todos los registros que llenaron el campo honeypot, probablemente bots.
+
+
+¿Y cómo limpiarlos?
+Puedes exportar ese segmento.
+
+Revisar si hay patrones en los emails.
+
+Eliminarlos manualmente o mantenerlos en un segmento inactivo.
+
+ Consejo adicional
+Activa doble opt-in para que solo humanos confirmen el registro:
+
+Ve a Audience > Settings > Audience name and defaults.
+
+Marca Enable double opt-in.
+
+Así, solo quienes hagan clic en el correo de confirmación serán añadidos.
+
+
+
+Configurar doble opt-in en Mailchimp
+Esto mejora mucho la calidad de los registros:
+
+Los bots no completan el proceso de confirmación.
+
+Evita agregar emails falsos a tu base.
+
+- Puedes activarlo así:
+
+Ir a Audience → Signup forms.
+
+Seleccionar Form builder.
+
+En “Settings”, activar Enable double opt-in.
+
+Filtrar correos públicos desde Mailchimp (con segmentación)
+No puedes bloquearlos en el formulario, pero sí puedes crear un segmento que excluya dominios como @gmail.com, @yahoo.com, etc.
+
+Pasos:
+
+Ve a tu audiencia.
+Crea un Segment.
+
+Condición: Email Address does not contain @gmail.com
+
+Añade más condiciones (AND) para otros dominios públicos.

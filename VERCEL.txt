@@ -1,0 +1,19 @@
+DESPLEGANDO VERCEL astro
+
+* AÑADIR EL PROYECTO A GitHub
+* CREAR EL PROYECTO EN VERCEL
+* EN LA LINEA DE COMANDOS DEL PROYECTO , EJECUTAR EL BUILD, PARA VER SI NOS SALE ALGÚN ERROR
+npm run build
+* Si sale este erro [NoAdapterInstalled] Cannot use server-rendered pages without an adapter. Please install and configure the appropriate server adapter for your final deployment.
+
+* INSTALAMOS  ADAPTADORES DE VERCEL 
+
+npx astro add vercel
+
+* lUEGO DE LA INSTALACIÓN SUBIR LOS CAMBIOS A GITHUB
+ - git status
+ - git add .
+ - git commit -m "Añadido adaptador de vercel"
+ - git push
+
+MIRAR TUTORIAL: https://www.youtube.com/watch?v=WHqZAXHZN_w&t=1384s
