@@ -1,0 +1,5 @@
+function getDomainFromEmail(email) {
+  return email.substring(email.lastIndexOf("@") + 1).toLowerCase().trim();
+}
+
+sm

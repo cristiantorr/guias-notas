@@ -83,6 +83,18 @@ style: Cambios de formato que no afectan la lógica del código (espacios, comas
 refactor: Cambios en el código que no corrigen errores ni añaden funcionalidades.
 
 test: Añade o modifica pruebas.
+ 
+ -----------------------
+ 
+CLONAR REPOS
+
+* CLONAR RAMA ESPECIFICA
+git clone --single-branch --branch dev git@gitlab.com:pureblink/zentro-onepage.git
 
 
+GIT_TRACE_PACKET=1 GIT_TRACE=1 GIT_CURL_VERBOSE=1 git clone git@gitlab.com:pureblink/zentro-onepage.git
 
+* CLONAR REPO ULTIMO CAMBIO 
+git clone --depth 1 git@gitlab.com:pureblink/zentro-onepage.git
+
+ssh -T git@gitlab.com
