@@ -67,7 +67,7 @@ git update-index --no-assume-unchanged assets/css/output.css
 
 ------------------------------------
 
-CAMBIOS STANDAR GIT 
+CAMBIOS STANDAR GIT PARA DEV
 
 <tipo>: Indica la naturaleza del cambio. Algunos tipos comunes son:
 
