@@ -2,7 +2,6 @@
 git config --global user.name "Tu Nombre"
 git config --global user.email "tucorreo@example.com"
 
-
 2. Iniciar un nuevo repositorio
 
 git init
