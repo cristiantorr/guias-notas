@@ -4,7 +4,7 @@ git config --global user.email "tucorreo@example.com"
 
 
 2. Iniciar un nuevo repositorio
-r
+
 git init
 
 3. Clonar un repositorio existente
