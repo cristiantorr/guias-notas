@@ -85,7 +85,7 @@ refactor: Cambios en el código que no corrigen errores ni añaden funcionalidad
 test: Añade o modifica pruebas.
  
  -----------------------
- 
+
 CLONAR REPOS
 
 * CLONAR RAMA ESPECIFICA
@@ -98,3 +98,5 @@ GIT_TRACE_PACKET=1 GIT_TRACE=1 GIT_CURL_VERBOSE=1 git clone git@gitlab.com:pureb
 git clone --depth 1 git@gitlab.com:pureblink/zentro-onepage.git
 
 ssh -T git@gitlab.com
+
+----------------------
