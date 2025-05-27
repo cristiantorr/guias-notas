@@ -85,7 +85,7 @@ test: Añade o modifica pruebas.
  
  -----------------------
 
-CLONAR REPOS
+CLONAR REPOSITORIOS
 
 * CLONAR RAMA ESPECIFICA
 git clone --single-branch --branch dev git@gitlab.com:pureblink/zentro-onepage.git
