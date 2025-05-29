@@ -1,0 +1,44 @@
+/* Móviles pequeños (hasta 320px) */
+@media (max-width: 320px) {
+  /* Estilos para móviles ultra pequeños */
+}
+
+/* Móviles estándar (hasta 480px) */
+@media (max-width: 480px) {
+  /* Ajustes para smartphones típicos */
+}
+
+/* Phablets y móviles grandes (hasta 600px) */
+@media (max-width: 600px) {
+  /* Mejoras para pantallas grandes de móvil */
+}
+
+/* Tablets verticales */
+@media (min-width: 600px) and (max-width: 768px) {
+  /* Estilos para iPads mini, tablets pequeñas */
+}
+
+/* Tablets horizontales o pantallas medianas */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Disposición tipo tablet horizontal */
+}
+
+/* Laptops */
+@media (min-width: 1024px) and (max-width: 1280px) {
+  /* Layout optimizado para portátiles */
+}
+
+/* Escritorio común */
+@media (min-width: 1280px) and (max-width: 1600px) {
+  /* Para pantallas de escritorio normales */
+}
+
+/* Pantallas grandes o 1080p */
+@media (min-width: 1600px) and (max-width: 1920px) {
+  /* Extra margen, tipografía más grande, etc. */
+}
+
+/* 4K o ultra-wide */
+@media (min-width: 1920px) {
+  /* Estilos para monitores ultra anchos o 4K */
+}

@@ -1,4 +1,5 @@
 * Crear proyecto
+
 npm create astro@latest
 
 * Empezar proyecto
