@@ -1,0 +1,3 @@
+GENERAR LLAVES SSH PARA DISTINTAS CUENTAS
+ssh-keygen -t rsa -b 4096 -C "cristian.torres@pureblink.com"
+C:\Users\User/.ssh/id_rsa_pureblink
