@@ -1,0 +1,51 @@
+CI/CD: Integración Continua y Entrega/Despliegue Continuo
+
+CI/CD significa Integración Continua (CI) y Entrega/Despliegue Continuo (CD). Es una práctica clave en el desarrollo moderno de software que ayuda a automatizar pruebas, integraciones y despliegues.
+
+-----------------------------------------------------
+¿Qué es CI/CD?
+
+CI (Continuous Integration): 
+Prueba automáticamente tu código cada vez que haces un push o merge request. Detecta errores temprano.
+
+CD (Continuous Delivery o Continuous Deployment): 
+Automatiza el proceso de llevar tu código a producción o a un entorno de prueba.
+
+-----------------------------------------------------
+Flujo básico de CI/CD
+
+1. Haces un push a tu rama en GitLab.
+2. GitLab ejecuta un pipeline que puede:
+   - Ejecutar tests (unitarios, de integración).
+   - Analizar la calidad del código.
+   - Compilar el proyecto si es necesario.
+   - Empaquetar y desplegar el código a un servidor.
+3. Si todo pasa ✅, el código se aprueba o se despliega automáticamente.
+
+-----------------------------------------------------
+¿Dónde se configura?
+
+En GitLab, CI/CD se configura con un archivo en la raíz del repositorio llamado:
+
+.gitlab-ci.yml
+
+Ejemplo básico para un proyecto Node.js:
+
+stages:
+  - test
+
+test_job:
+  stage: test
+  image: node:18
+  script:
+    - npm install
+    - npm test
+
+-----------------------------------------------------
+Beneficios
+
+- Encuentras errores rápidamente.
+- Evitas el clásico “funciona en mi máquina”.
+- Ahorra tiempo: menos tareas manuales.
+- Mejora la calidad del código.
+- Permite lanzamientos frecuentes y seguros.
