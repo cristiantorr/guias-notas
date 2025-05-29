@@ -1,164 +1,231 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tutorial Flexbox: Explicación de cada propiedad</title>
-  <style>
-    /* Reseteamos márgenes y padding para que no interfieran */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial Flexbox: Explicación de cada propiedad</title>
+    <style>
+      /* Reseteamos márgenes y padding para que no interfieran */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
 
-    h1, h2 {
-      text-align: center;
-      color: #333;
-    }
+      h1,
+      h2 {
+        text-align: center;
+        color: #333;
+      }
 
-    section {
-      margin: 20px;
-    }
+      section {
+        margin: 20px;
+      }
 
-    /* General para los contenedores de los ejemplos */
-    .container {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 30px;
-      background-color: #e2e2e2;
-      padding: 20px;
-    }
+      .container {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px;
+        background-color: #e2e2e2;
+        padding: 20px;
+      }
 
-    .item {
-      background-color: lightblue;
-      padding: 20px;
-      text-align: center;
-      border: 1px solid #000;
-    }
+      .item {
+        background-color: lightblue;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #000;
+      }
 
-    /* Para contenedores con direcciones específicas */
-    .container-row {
-      flex-direction: row;
-    }
+      /* Para contenedores con direcciones específicas */
+      .container-row {
+        flex-direction: row;
+      }
 
-    .container-column {
-      flex-direction: column;
-    }
+      .container-column {
+        flex-direction: column;
+      }
 
-    .container-wrap {
-      flex-wrap: wrap;
-    }
+      .container-wrap {
+        flex-wrap: wrap;
+      }
 
-    /* Ejemplo de justify-content */
-    .container-justify {
-      justify-content: center;
-    }
+      /* Ejemplo de justify-content */
+      .container-justify {
+        justify-content: center;
+      }
 
-    /* Ejemplo de align-items */
-    .container-align-items {
-      align-items: center;
-    }
+      /* Ejemplo de align-items */
+      .container-align-items {
+        align-items: center;
+      }
 
-    /* Ejemplo de align-self */
-    .container-align-self {
-      align-items: center;
-    }
-  </style>
-</head>
-<body>
+      /* Ejemplo de align-self */
+      .container-align-self {
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tutorial Flexbox - Explicación de cada propiedad</h1>
 
-  <h1>Tutorial Flexbox - Explicación de cada propiedad</h1>
+    <!-- Ejemplo 1: display: flex -->
+    <section>
+      <h2>1. display: flex</h2>
+      <p>
+        La propiedad <strong>display: flex</strong> convierte el contenedor en
+        un flex container, permitiendo que sus hijos sean flex items y puedan
+        alinearse y distribuirse de diferentes formas.
+      </p>
+      <div class="container container-row">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+      <p>
+        El contenedor se ha convertido en un flex container gracias a
+        <code>display: flex</code>. Los items dentro de él se alinearán en una
+        fila por defecto.
+      </p>
+    </section>
 
-  <!-- Ejemplo 1: display: flex -->
-  <section>
-    <h2>1. display: flex</h2>
-    <p>La propiedad <strong>display: flex</strong> convierte el contenedor en un flex container, permitiendo que sus hijos sean flex items y puedan alinearse y distribuirse de diferentes formas.</p>
-    <div class="container container-row">
-      <div class="item">Item 1</div>
-      <div class="item">Item 2</div>
-      <div class="item">Item 3</div>
-    </div>
-    <p>El contenedor se ha convertido en un flex container gracias a <code>display: flex</code>. Los items dentro de él se alinearán en una fila por defecto.</p>
-  </section>
+    <!-- Ejemplo 2: flex-direction -->
+    <section>
+      <h2>2. flex-direction</h2>
+      <p>
+        La propiedad <strong>flex-direction</strong> define la dirección en la
+        que se alinearán los elementos dentro del flex container. Los valores
+        posibles son <code>row</code>, <code>column</code>,
+        <code>row-reverse</code> y <code>column-reverse</code>.
+      </p>
+      <div class="container container-column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+      <p>
+        Con <code>flex-direction: column</code>, los items se alinean de arriba
+        hacia abajo en lugar de en una fila.
+      </p>
+    </section>
 
-  <!-- Ejemplo 2: flex-direction -->
-  <section>
-    <h2>2. flex-direction</h2>
-    <p>La propiedad <strong>flex-direction</strong> define la dirección en la que se alinearán los elementos dentro del flex container. Los valores posibles son <code>row</code>, <code>column</code>, <code>row-reverse</code> y <code>column-reverse</code>.</p>
-    <div class="container container-column">
-      <div class="item">Item 1</div>
-      <div class="item">Item 2</div>
-      <div class="item">Item 3</div>
-    </div>
-    <p>Con <code>flex-direction: column</code>, los items se alinean de arriba hacia abajo en lugar de en una fila.</p>
-  </section>
+    <!-- Ejemplo 3: flex-wrap -->
+    <section>
+      <h2>3. flex-wrap</h2>
+      <p>
+        La propiedad <strong>flex-wrap</strong> especifica si los elementos
+        deben ajustarse dentro del contenedor o si deben mantenerse en una sola
+        línea. Los valores posibles son <code>nowrap</code> (sin ajuste),
+        <code>wrap</code> (ajuste en varias líneas) y
+        <code>wrap-reverse</code> (ajuste en varias líneas en orden inverso).
+      </p>
+      <div class="container container-wrap" style="flex-wrap: wrap">
+        <div class="item" style="flex: 1 0 100px">Item 1</div>
+        <div class="item" style="flex: 1 0 100px">Item 2</div>
+        <div class="item" style="flex: 1 0 100px">Item 3</div>
+        <div class="item" style="flex: 1 0 100px">Item 4</div>
+      </div>
+      <p>
+        Usamos <code>flex-wrap: wrap</code> para que los elementos se ajusten
+        automáticamente en múltiples líneas si el espacio es insuficiente.
+      </p>
+    </section>
 
-  <!-- Ejemplo 3: flex-wrap -->
-  <section>
-    <h2>3. flex-wrap</h2>
-    <p>La propiedad <strong>flex-wrap</strong> especifica si los elementos deben ajustarse dentro del contenedor o si deben mantenerse en una sola línea. Los valores posibles son <code>nowrap</code> (sin ajuste), <code>wrap</code> (ajuste en varias líneas) y <code>wrap-reverse</code> (ajuste en varias líneas en orden inverso).</p>
-    <div class="container container-wrap" style="flex-wrap: wrap;">
-      <div class="item" style="flex: 1 0 100px;">Item 1</div>
-      <div class="item" style="flex: 1 0 100px;">Item 2</div>
-      <div class="item" style="flex: 1 0 100px;">Item 3</div>
-      <div class="item" style="flex: 1 0 100px;">Item 4</div>
-    </div>
-    <p>Usamos <code>flex-wrap: wrap</code> para que los elementos se ajusten automáticamente en múltiples líneas si el espacio es insuficiente.</p>
-  </section>
+    <!-- Ejemplo 4: justify-content -->
+    <section>
+      <h2>4. justify-content</h2>
+      <p>
+        La propiedad <strong>justify-content</strong> controla la distribución
+        de los elementos a lo largo del eje principal (por defecto el eje
+        horizontal). Los valores posibles son <code>flex-start</code>,
+        <code>flex-end</code>, <code>center</code>, <code>space-between</code>,
+        <code>space-around</code>, y <code>space-evenly</code>.
+      </p>
+      <div
+        class="container container-justify"
+        style="justify-content: space-between"
+      >
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+      <p>
+        Con <code>justify-content: space-between</code>, los items se
+        distribuyen con espacio entre ellos a lo largo del eje principal.
+      </p>
+    </section>
 
-  <!-- Ejemplo 4: justify-content -->
-  <section>
-    <h2>4. justify-content</h2>
-    <p>La propiedad <strong>justify-content</strong> controla la distribución de los elementos a lo largo del eje principal (por defecto el eje horizontal). Los valores posibles son <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>space-between</code>, <code>space-around</code>, y <code>space-evenly</code>.</p>
-    <div class="container container-justify" style="justify-content: space-between;">
-      <div class="item">Item 1</div>
-      <div class="item">Item 2</div>
-      <div class="item">Item 3</div>
-    </div>
-    <p>Con <code>justify-content: space-between</code>, los items se distribuyen con espacio entre ellos a lo largo del eje principal.</p>
-  </section>
+    <!-- Ejemplo 5: align-items -->
+    <section>
+      <h2>5. align-items</h2>
+      <p>
+        La propiedad <strong>align-items</strong> controla el alineamiento de
+        los elementos en el eje transversal (por defecto el eje vertical). Los
+        valores posibles son <code>flex-start</code>, <code>flex-end</code>,
+        <code>center</code>, <code>baseline</code>, y <code>stretch</code>.
+      </p>
+      <div class="container container-align-items" style="align-items: center">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+      <p>
+        Con <code>align-items: center</code>, los items se alinean en el centro
+        del contenedor a lo largo del eje transversal.
+      </p>
+    </section>
 
-  <!-- Ejemplo 5: align-items -->
-  <section>
-    <h2>5. align-items</h2>
-    <p>La propiedad <strong>align-items</strong> controla el alineamiento de los elementos en el eje transversal (por defecto el eje vertical). Los valores posibles son <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>baseline</code>, y <code>stretch</code>.</p>
-    <div class="container container-align-items" style="align-items: center;">
-      <div class="item">Item 1</div>
-      <div class="item">Item 2</div>
-      <div class="item">Item 3</div>
-    </div>
-    <p>Con <code>align-items: center</code>, los items se alinean en el centro del contenedor a lo largo del eje transversal.</p>
-  </section>
+    <!-- Ejemplo 6: align-self -->
+    <section>
+      <h2>6. align-self</h2>
+      <p>
+        La propiedad <strong>align-self</strong> permite a los items alinear
+        individualmente. Esta propiedad sobrescribe el valor de
+        <code>align-items</code> para un item específico. Los valores son los
+        mismos que para <code>align-items</code>.
+      </p>
+      <div class="container container-align-self" style="align-items: center">
+        <div class="item">Item 1</div>
+        <div class="item" style="align-self: flex-end">
+          Item 2 (Alineado abajo)
+        </div>
+        <div class="item">Item 3</div>
+      </div>
+      <p>
+        En este ejemplo, el segundo item se alinea al fondo del contenedor
+        usando <code>align-self: flex-end</code>, mientras que los demás se
+        alinean al centro.
+      </p>
+    </section>
 
-  <!-- Ejemplo 6: align-self -->
-  <section>
-    <h2>6. align-self</h2>
-    <p>La propiedad <strong>align-self</strong> permite a los items alinear individualmente. Esta propiedad sobrescribe el valor de <code>align-items</code> para un item específico. Los valores son los mismos que para <code>align-items</code>.</p>
-    <div class="container container-align-self" style="align-items: center;">
-      <div class="item">Item 1</div>
-      <div class="item" style="align-self: flex-end;">Item 2 (Alineado abajo)</div>
-      <div class="item">Item 3</div>
-    </div>
-    <p>En este ejemplo, el segundo item se alinea al fondo del contenedor usando <code>align-self: flex-end</code>, mientras que los demás se alinean al centro.</p>
-  </section>
+    <!-- Ejemplo 7: flex-grow, flex-shrink y flex-basis -->
+    <section>
+      <h2>7. flex-grow, flex-shrink y flex-basis</h2>
+      <p>
+        Estas tres propiedades permiten controlar cómo un item se estira o
+        encoge dentro del contenedor.
+      </p>
+      <div class="container">
+        <div class="item" style="flex-grow: 1; flex-basis: 100px">
+          Item 1 (crece)
+        </div>
+        <div class="item" style="flex-grow: 2; flex-basis: 100px">
+          Item 2 (crece más)
+        </div>
+        <div class="item" style="flex-grow: 0; flex-basis: 100px">
+          Item 3 (no crece)
+        </div>
+      </div>
+      <p>
+        El primer y segundo item crecen en función del valor de
+        <code>flex-grow</code>. El tercero no crece, ya que
+        <code>flex-grow: 0</code>.
+      </p>
+    </section>
 
-  <!-- Ejemplo 7: flex-grow, flex-shrink y flex-basis -->
-  <section>
-    <h2>7. flex-grow, flex-shrink y flex-basis</h2>
-    <p>Estas tres propiedades permiten controlar cómo un item se estira o encoge dentro del contenedor.</p>
-    <div class="container">
-      <div class="item" style="flex-grow: 1; flex-basis: 100px;">Item 1 (crece)</div>
-      <div class="item" style="flex-grow: 2; flex-basis: 100px;">Item 2 (crece más)</div>
-      <div class="item" style="flex-grow: 0; flex-basis: 100px;">Item 3 (no crece)</div>
-    </div>
-    <p>El primer y segundo item crecen en función del valor de <code>flex-grow</code>. El tercero no crece, ya que <code>flex-grow: 0</code>.</p>
-  </section>
-
-  <footer>
-    <p>Fin del Tutorial Flexbox</p>
-  </footer>
-
-</body>
+    <footer>
+      <p>Fin del Tutorial Flexbox</p>
+    </footer>
+  </body>
 </html>
