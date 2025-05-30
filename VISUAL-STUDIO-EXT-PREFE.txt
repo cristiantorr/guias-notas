@@ -1,4 +1,5 @@
 * settings.json : Poner prettier como formato de codigo
+
 * EXTESIONES : 
   - live server
   - monokai
