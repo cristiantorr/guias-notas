@@ -13,6 +13,7 @@ npx astro add tailwind
 * Para limpiar cache o deprono no encuentra los tipos y salen errores ejecutar  ejemplo:
 
 AQUÍ SALE ERROR EN EL PARAMETRÓ book , porque no encuentra el tipo de datos
+  
   return books.map((book) => ({
    
     params: { id:book.slug },
