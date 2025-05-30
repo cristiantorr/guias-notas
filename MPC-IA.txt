@@ -6,7 +6,6 @@ Comunicación en el cliente ques es una inteligencia artificial como windsurf. c
 
 * Hacer un MCP para wordpress donde pueda consultar datos, como usuarios, posts etc.
 
-
 * Se crea carpeta , y un archivo main.ts, lo vamos hacer con typescript
 * Se ejecuta npm init para el package.json
   - se agreg "type" : "module", ejemplo de archivo: 
