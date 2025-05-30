@@ -43,6 +43,7 @@ $args = array(
 
 ----
 
+
 TRAER POSTS POR TAXONOMIA
 $args = array(
 		'post_type' => 'communities',
