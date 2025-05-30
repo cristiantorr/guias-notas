@@ -39,7 +39,6 @@ HAY QUE PONER EEN EL ARCCHIVO astro.config.mjs la opción   output: 'server',
 
 export default defineConfig({
     output: 'server',
-
   vite: {
     plugins: [tailwindcss()],
   },
