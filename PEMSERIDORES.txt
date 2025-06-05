@@ -1,0 +1,121 @@
+PEM
+
+ssh <ip server>
+
+ssh purebli9@69.195.77
+
+
+cd /var/opt/bitnami/
+
+buscar el archivo nginx
+
+/opt/bitnami/nginx/conf/nginx.conf
+/opt/bitnami/bndiagnostic/original-data/nginx/conf/nginx.conf
+/etc/monit/conf.d/nginx.conf
+
+verificar que procesos tengo apache o nginx 
+ps aux | grep -E 'nginx|apache|httpd'
+
+
+reiniciar nginx 
+
+sudo /opt/bitnami/ctlscript.sh restart nginx
+
+
+Esto te muestra la IP que te da el DNS de Bluehost.
+
+dig pinnacleinternational.ca @ns1.bluehost.com +short
+
+BUSCAR EN EL SISTEMA PALABRA 
+
+grep -Ri 'pinnacleinternational.ca' /opt/bitnami/nginx/
+
+buscar server_block /opt/bitnami/nginx/conf/server_blocks
+
+grep: busca texto
+
+-R: recursivo
+
+-i: sin distinguir mayúsculas/minúsculas
+
+'pinnacleinternational.ca': lo que estás buscando
+
+/: desde la raíz del sistema
+
+⚠️ Esto puede tardar un poco porque busca en todo el sistema.
+
+WP-CLI UPDATE URLS 
+
+sudo /opt/bitnami/wp-cli/bin/wp option update home 'http://pinnacleinternational.ca'
+sudo /opt/bitnami/wp-cli/bin/wp option update siteurl 'http://pinnacleinternational.ca'
+
+VERIFICAR 
+
+sudo /opt/bitnami/wp-cli/bin/wp option get home
+sudo /opt/bitnami/wp-cli/bin/wp option get siteurl
+
+VERIFICAR CONFIUGURACIÓN 
+
+sudo nginx -t
+
+o poner en wordpress 
+
+define('WP_HOME', 'https://pinnacleinternational.ca');
+define('WP_SITEURL', 'https://pinnacleinternational.ca');
+
+url original: http://3.144.121.122
+
+
+bnackup wp db export backup-before-url-change.sql
+restaurar wp db import backup-before-url-change.sql
+
+/opt/bitnami/mariadb/bin/mysqldump -u root -p pinnacle_website > backup-before-url-change.sql
+
+The default username and password is 'user' and 'mZrff0DdSTq+'.
+
+
+Cómo saber el usuario y nombre de la base de datos
+Puedes confirmar esto con:
+
+database-1-instance-1.c9mwqu06qz8h.us-east-2.rds.amazonaws.com
+sudo wp config get DB_NAME  : pinnacle_website
+sudo wp config get DB_USER : admin
+sudo wp config get DB_PASSWORD : xjd57OhdZ!2jExnd
+sudo wp config get DB_HOST : pinnacle-website.cluster-c9mwqu06qz8h.us-east-2.rds.amazonaws.com:3306
+ 
+ wp user create cristian cristian.torres@pureblink.com --role=administrator
+ aTH7sRCsFif5q&MJev(TMQW3
+ 
+DB_NAME : 
+DB_PASSWORD: xjd57OhdZ!2jExnd
+DB_USER : pureblink
+DB_HOST  database-1.c9mwqu06qz8h.us-east-2.rds.amazonaws.com
+
+CONECTARSE A LA DB:  mysql -h pinnacle-website.cluster-c9mwqu06qz8h.us-east-2.rds.amazonaws.com -P 3306 -u admin -p --skip-ssl
+
+mysqldump -u admin -p pinnacle_website > backup.sql
+mysql -u admin -p -h pinnacle-website.cluster-c9mwqu06qz8h.us-east-2.rds.amazonaws.com:3306
+
+
+/opt/bitnami/mariadb/bin/ mysqldump -h pinnacle-website.cluster-c9mwqu06qz8h.us-east-2.rds.amazonaws.com:3306 -u admin -p pinnacle_website > ~/backup.sql
+
+/opt/bitnami/mariadb/bin/mysqldump -h pinnacle-website.cluster-c9mwqu06qz8h.us-east-2.rds.amazonaws.com -P xjd57OhdZ!2jExnd -u admin -pTuContraseña pinnacle_website > ~/backup.sql
+
+cristian.torres@pureblink.com --role=admin
+xauvsj&r9U&NbmCaIGze2!G5
+
+
+certificados /opt/bitnami/nginx/conf/bitnami/certs/server.crt
+ /opt/bitnami/nginx/conf/bitnami/certs/server.key
+
+ 1. Ejecuta bncert-tool como superusuario
+
+sudo /opt/bitnami/bncert-tool
+
+El asistente te pedirá:
+✅ Dominio(s):
+Escribe tus dominios separados por espacios:
+
+pinnacleinternational.ca www.pinnacleinternational.ca
+
+automaticamente edita los archivos de configuración
