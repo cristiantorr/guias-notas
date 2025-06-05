@@ -1,0 +1,101 @@
+1. Configurar tu nombre y correo
+git config --global user.name "Tu Nombre"
+git config --global user.email "tucorreo@example.com"
+
+2. Iniciar un nuevo repositorio
+
+git init
+
+3. Clonar un repositorio existente
+git clone https://github.com/usuario/repositorio.git
+
+4. Ver el estado de los archivos
+git status
+
+5. Ver diferencias
+git diff
+
+6. Añadir archivos al staging (prepararlos para commit)
+
+git add archivo.txt
+# o todos los archivos modificados:
+git add .
+
+7. Hacer un commit (guardar cambios localmente)
+git commit -m "Descripción de los cambios"
+
+8. Ver ramas
+git branch
+
+9. Crear nueva rama
+git checkout -b nueva-rama
+
+10. Cambiar de rama
+git checkout main
+
+11. Ver remotos
+git remote -v
+
+12. Subir cambios a un repositorio remoto
+git push origin nombre-rama
+
+13. Traer actualizaciones del remoto
+git pull origin nombre-rama
+
+14. Descartar cambios locales no guardados
+git checkout -- archivo.txt
+
+15. Deshacer un git add
+git reset archivo.txt
+
+16. Revertir el último commit (sin borrar cambios)
+git reset --soft HEAD~1
+
+17. Ver archivos sin rastrear
+git status
+
+18. Eliminar archivos no rastreados (⚠️ cuidado)
+git clean -f
+
+
+19.Esto le dice a Git que no preste atención a los cambios locales de ese archivo. Es perfecto para archivos generados (como los CSS de Tailwind), cuando no quieres subirlos ni que te aparezcan como modificados.
+
+git update-index --assume-unchanged assets/css/output.css
+
+ -- Para revertir esto (volver a rastrearlo):
+git update-index --no-assume-unchanged assets/css/output.css
+
+------------------------------------
+
+CAMBIOS STANDAR GIT PARA DEV
+
+<tipo>: Indica la naturaleza del cambio. Algunos tipos comunes son:
+
+feat: Añade una nueva funcionalidad.
+
+fix:  corrigiendo un error o bug 
+
+docs: Cambios en la documentación.
+
+style: Cambios de formato que no afectan la lógica del código (espacios, comas, etc.).
+
+refactor: Cambios en el código que no corrigen errores ni añaden funcionalidades.
+
+test: Añade o modifica pruebas.
+ 
+ -----------------------
+
+CLONAR REPOSITORIOS
+
+* CLONAR RAMA ESPECIFICA
+git clone --single-branch --branch dev git@gitlab.com:pureblink/zentro-onepage.git
+
+
+GIT_TRACE_PACKET=1 GIT_TRACE=1 GIT_CURL_VERBOSE=1 git clone git@gitlab.com:pureblink/zentro-onepage.git
+
+* CLONAR REPO ULTIMO CAMBIO 
+git clone --depth 1 git@gitlab.com:pureblink/zentro-onepage.git
+
+ssh -T git@gitlab.com
+
+----------------------
