@@ -24,11 +24,11 @@ sudo /opt/bitnami/ctlscript.sh restart nginx
 
 Esto te muestra la IP que te da el DNS de Bluehost.
 
-dig pinnacleinternational.ca @ns1.bluehost.com +short
+dig DOMAIN @ns1.bluehost.com +short
 
 BUSCAR EN EL SISTEMA PALABRA 
 
-grep -Ri 'pinnacleinternational.ca' /opt/bitnami/nginx/
+grep -Ri 'DOMAIN' /opt/bitnami/nginx/
 
 buscar server_block /opt/bitnami/nginx/conf/server_blocks
 
