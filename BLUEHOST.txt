@@ -1,0 +1,39 @@
+ns-1756.awsdns-27.co.uk
+ns-641.awsdns-16.net
+ns-1134.awsdns-13.org
+ns-28.awsdns-03.com
+
+IP : 3.144.121.122
+
+SERVIDORES DE NOMBRE :  
+NS1.BLUEHOST.COM
+NS2.BLUEHOST.COM
+
+PINNACLEINTERNATIONAL.CA.
+
+1. Registros MX (para correo)
+   En la consola de Route 53, ve a la zona hospedada de tu dominio, y añade un registro MX con la información que Bluehost te proporciona.
+
+Ejemplo típico de registros MX de Bluehost:
+
+Tipo Nombre Valor Prioridad
+MX @ mail.yourdomain.com 10
+
+2. Registro A o CNAME (si usas subdominios para correo)
+   Agrega un registro A o CNAME si el registro MX apunta a algo como mail.tudominio.com.
+   Ejemplo:
+
+Tipo Nombre Valor (IP de Bluehost)
+A mail 66.235.200.22 (ejemplo)
+
+Para saber qué IP usar, revísalo en tu panel de Bluehost → sección DNS.
+
+3. Registros SPF, DKIM y DMARC (opcional pero recomendado)
+   Para asegurar la entrega y autenticidad de los correos:
+
+Registro SPF (tipo TXT)
+Tipo Nombre Valor
+TXT @ "v=spf1 include:bluehost.com ~all"
+
+Registro DKIM / DMARC
+Depende de la configuración que te dé Bluehost. Normalmente vienen en la sección de “Email Deliverability” o “Autenticación” dentro del cPanel.
