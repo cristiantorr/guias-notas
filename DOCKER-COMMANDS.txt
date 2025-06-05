@@ -71,7 +71,6 @@ Si alguna vez necesitas detener y reiniciar solo los contenedores sin eliminar l
 
 Detener contenedores sin eliminar:
 
-
 docker-compose stop
 Iniciar los contenedores detenidos:
 
