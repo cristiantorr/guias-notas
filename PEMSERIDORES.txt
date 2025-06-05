@@ -38,7 +38,7 @@ grep: busca texto
 
 -i: sin distinguir mayúsculas/minúsculas
 
-'pinnacleinternational.ca': lo que estás buscando
+'texto': lo que estás buscando
 
 /: desde la raíz del sistema
 
