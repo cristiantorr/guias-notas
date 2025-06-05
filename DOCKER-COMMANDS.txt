@@ -38,7 +38,6 @@ docker ps
 Navegar y revisar archivos dentro del contenedor
 Una vez dentro del contenedor, puedes explorar el sistema de archivos, verificar que los archivos están en su lugar y realizar otros ajustes. Por ejemplo, para ver los archivos dentro de /var/www/html, puedes usar:
 
-
 ls /var/www/html
 
 VER PERMISOS DE UNA ARCHIVO EN docker
