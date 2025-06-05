@@ -35,10 +35,8 @@ Primero, necesitas identificar el nombre o ID del contenedor al que deseas acced
 docker ps
 
 
-
 Navegar y revisar archivos dentro del contenedor
 Una vez dentro del contenedor, puedes explorar el sistema de archivos, verificar que los archivos están en su lugar y realizar otros ajustes. Por ejemplo, para ver los archivos dentro de /var/www/html, puedes usar:
-
 
 ls /var/www/html
 
@@ -53,7 +51,6 @@ Detener y eliminar los contenedores (hacer "down")
 Primero, si tienes contenedores en ejecución con Docker Compose, puedes detenerlos y eliminarlos con el siguiente comando:
 
 docker-compose down
-
 
 Volver a ejecutar los contenedores (hacer "up")
 Después de haber detenido los contenedores, puedes volver a ejecutar los contenedores con el siguiente comando:
@@ -70,7 +67,6 @@ $ docker-compose up -d mysql phpmyadmin
 Si alguna vez necesitas detener y reiniciar solo los contenedores sin eliminar los volúmenes o redes, puedes usar los siguientes comandos también:
 
 Detener contenedores sin eliminar:
-
 
 docker-compose stop
 Iniciar los contenedores detenidos:
