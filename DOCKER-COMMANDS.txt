@@ -53,7 +53,6 @@ Primero, si tienes contenedores en ejecución con Docker Compose, puedes detener
 
 docker-compose down
 
-
 Volver a ejecutar los contenedores (hacer "up")
 Después de haber detenido los contenedores, puedes volver a ejecutar los contenedores con el siguiente comando:
 
