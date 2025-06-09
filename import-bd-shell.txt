@@ -12,3 +12,6 @@ mysql -u root -proot -f dbmultisite_local < stgducales.sql
 
  <b>Warning</b>:  Undefined array key 6 in <b>C:\Users\Cristian Torres\Local Sites\comfama\app\public\wp-content\plugins\custom-row-plugin\custom-row-plugin.php</b> on line <b>123</b><br />
 
+
+ uploads/backwpup/24e3bf/backups/
+

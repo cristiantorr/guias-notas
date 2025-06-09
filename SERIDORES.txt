@@ -1,5 +1,0 @@
-PEM
-
-ssh <ip server>
-
-ssh purebli9@69.195.77
