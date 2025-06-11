@@ -1,10 +1,11 @@
-Ver procesos	pm2 list
+Ver procesos	npx pm2 list
 Ver logs	pm2 logs zentro-api
 Detener app	pm2 stop zentro-api
 Reiniciar app	pm2 restart zentro-api
-Eliminar app	pm2 delete zentro-api
+Eliminar app	npx pm2 delete zentro-api
 Guardar cambios	pm2 save
 
+reiniciar pm2:  npx pm2 restart all
 
  Cómo instalar PM2 en tu instancia EC2
 Asegúrate de tener Node.js instalado (ya lo tienes).
@@ -13,10 +14,10 @@ Instala PM2 globalmente:sudo npm install -g pm2
 Lanza tus apps con PM2:
 
 cd /www/wwwroot/api.zentro.app
-pm2 start index.js --name api-zentro
+npx pm2 start index.js --name api-zentro
 
 cd /www/wwwroot/services.zentro.app
-pm2 start index.js --name services-zentro
+npx pm2 start index.js --name services-zentro
 
 Guarda la configuración para que arranquen automáticamente al reiniciar:
 
