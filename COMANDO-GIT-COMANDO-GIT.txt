@@ -85,6 +85,7 @@ test: Añade o modifica pruebas.
  
  -----------------------
 
+
 CLONAR REPOSITORIOS
 
 * CLONAR RAMA ESPECIFICA
@@ -97,5 +98,4 @@ GIT_TRACE_PACKET=1 GIT_TRACE=1 GIT_CURL_VERBOSE=1 git clone git@gitlab.com:pureb
 git clone --depth 1 git@gitlab.com:pureblink/zentro-onepage.git
 
 ssh -T git@gitlab.com
-
 ----------------------
