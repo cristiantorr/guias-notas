@@ -1,0 +1,41 @@
+VBERIFICAR EXPIRACIÓN
+
+openssl s_client -connect services.zentro.app:443 -servername services.zentro.app </dev/null 2>/dev/null | openssl x509 -noout -dates
+
+esta es la config para api express 
+
+server {
+
+
+listen 443 ssl;
+    server_name services.zentro.app;
+
+    ssl_certificate /etc/letsencrypt/live/services.zentro.app/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/services.zentro.app/privkey.pem;
+
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers HIGH:!aNULL:!MD5;
+
+    location / {
+        proxy_pass http://localhost:8989;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+
+
+sudo apt update
+sudo apt install certbot python3-certbot-nginx -y
+
+sudo certbot renew
+sudo certbot --nginx -d api.zentro.app
+sudo certbot --nginx -d services.zentro.app
+sudo systemctl restart nginx
+
+
+CON BITNAME apache
+sudo /opt/bitnami/ctlscript.sh status
+sudo /opt/bitnami/ctlscript.sh status
