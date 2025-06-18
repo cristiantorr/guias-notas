@@ -1,0 +1,3 @@
+buscar archivosospechosos
+
+find /opt/bitnami/wordpress/ -type f -name "*.php" -mtime -7
