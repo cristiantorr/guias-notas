@@ -39,3 +39,12 @@ sudo systemctl restart nginx
 CON BITNAME apache
 sudo /opt/bitnami/ctlscript.sh status
 sudo /opt/bitnami/ctlscript.sh status
+
+Hola jose, espero estes bien , te escribo para decirte que ya todo funciona correctamente: 
+
+* Se actualizaron los certificados de seguridad de las aplicaciones, ya que habían expirado.
+* Se ejecuto el botón para actualizar las propiedades "Update from property vista", esto debió actualizar los datos como te indique que iba hacer una vez actualizados los certificados.
+* Se validaron los precios de las propiedades con el ejemplo enviado en el email: 
+  - Tener en cuenta , esto lo valide también con stiwar, las propiedades que se  actualizan el precio pero tienen un estado como "no-available", estas propiedades no toman el precio en cuenta dentro de la actualización con el botón "Update from property vista".
+  - Cada proyecto es independiente y toma el precio ejemplo de broadway:
+  
