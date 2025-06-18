@@ -22,6 +22,14 @@ reiniciar nginx
 sudo /opt/bitnami/ctlscript.sh restart nginx
 
 
+curl -v https://projects.zentro.app/project/soho/units-manager/
+
+VERIFICAR CERTIFICADO:
+curl -v https://services.zentro.app
+
+GENERAR CERTIFICADO 
+sudo certbot --nginx -d api.zentro.app
+
 Esto te muestra la IP que te da el DNS de Bluehost.
 
 dig DOMAIN @ns1.bluehost.com +short
@@ -43,4 +51,6 @@ grep: busca texto
 /: desde la raíz del sistema
 
 ⚠️ Esto puede tardar un poco porque busca en todo el sistema.
+
+
 
