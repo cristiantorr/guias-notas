@@ -3,9 +3,11 @@ rm -rf nombre_de_la_carpeta
 
 1. rmdir nombre_de_la_carpeta
 Elimina una carpeta vacía.
-
-
 rmdir carpeta_vacia
+
+2. find con rm
+Elimina carpetas específicas por nombre dentro de un directorio:
+find . -type d -name "carpeta_a_borrar" -exec rm -rf {} +
 
 
 
