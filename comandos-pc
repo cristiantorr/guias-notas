@@ -9,5 +9,12 @@ rmdir carpeta_vacia
 Elimina carpetas específicas por nombre dentro de un directorio:
 find . -type d -name "carpeta_a_borrar" -exec rm -rf {} +
 
+3. unlink (no recomendado para carpetas)
+Este comando es para archivos, pero te lo menciono porque a veces se intenta usar erróneamente con carpetas.
+
+🔹 4. trash (de trash-cli, no borra permanentemente)
+
+Mueve carpetas a la papelera (si tienes trash-cli instalado):
+trash carpeta_importante
 
 
