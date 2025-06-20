@@ -12,9 +12,35 @@ find . -type d -name "carpeta_a_borrar" -exec rm -rf {} +
 3. unlink (no recomendado para carpetas)
 Este comando es para archivos, pero te lo menciono porque a veces se intenta usar erróneamente con carpetas.
 
-🔹 4. trash (de trash-cli, no borra permanentemente)
+4. trash (de trash-cli, no borra permanentemente)
 
 Mueve carpetas a la papelera (si tienes trash-cli instalado):
 trash carpeta_importante
 
+
+5. ls — Listar archivos y carpetas
+ls
+ls -l
+ls -a /ruta
+
+cd — Cambiar de directorio
+cd /home/usuario/documentos
+cd ..
+cd ~
+
+pwd — Mostrar la ruta actual
+pwd
+
+touch — Crear archivos vacíos
+touch nuevo_archivo.txt
+
+mkdir — Crear carpetas
+mkdir nueva_carpeta
+mkdir -p carpeta1/carpeta2
+
+du — Ver tamaño de carpetas o archivos
+du -sh carpeta/
+
+locate — Buscar archivos rápidamente (requiere updatedb)
+locate archivo.txt
 
