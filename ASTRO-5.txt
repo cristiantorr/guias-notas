@@ -19,7 +19,7 @@ AQUÍ SALE ERROR EN EL PARAMETRÓ book , porque no encuentra el tipo de datos
     params: { id:book.slug },
     props: { book },
   }));
-}
+
 
 - entonces se ejecuta otra vez este comando:
 npx astro sync
