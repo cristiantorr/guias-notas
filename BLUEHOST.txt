@@ -9,7 +9,7 @@ SERVIDORES DE NOMBRE :
 NS1.BLUEHOST.COM
 NS2.BLUEHOST.COM
 
-PINNACLEINTERNATIONAL.CA.
+
 
 1. Registros MX (para correo)
    En la consola de Route 53, ve a la zona hospedada de tu dominio, y añade un registro MX con la información que Bluehost te proporciona.
