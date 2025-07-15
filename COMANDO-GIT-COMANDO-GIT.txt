@@ -56,23 +56,6 @@ git status
 
 18. Eliminar archivos no rastreados (⚠️ cuidado)
 git clean -f
-gap-0 : Sin espacios
-gap-1 : Espacio-1
-gap-2 : gap-2
-gap-3 : gap-3
-gap-4 : gap-4
-gap-5 : gap-5
-gap-6 : gap-6
-gap-7 : gap-7
-gap-8 : gap-8
-gap-9 : gap-9
-gap-10 : gap-10
-gap-11 : gap-11
-gap-12 : gap-12
-gap-13 : gap-13
-gap-14 : gap-14
-gap-15 : gap-15
-gap-16 : gap-16
 
 19.Esto le dice a Git que no preste atención a los cambios locales de ese archivo. Es perfecto para archivos generados (como los CSS de Tailwind), cuando no quieres subirlos ni que te aparezcan como modificados.
 
