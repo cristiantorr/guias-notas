@@ -21,7 +21,8 @@ AQUÍ SALE ERROR EN EL PARAMETRÓ book , porque no encuentra el tipo de datos
   }));
 
 
-- entonces se ejecuta otra vez este comando:
+- Entonces se ejecuta otra vez este comando:
+
 npx astro sync
 
 * SERVER ESLAND 
