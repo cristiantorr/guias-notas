@@ -1,3 +1,11 @@
+
+
+BORRAR ARCHIVOS POR MEDIO DE WINDOWS R
+%temp%
+C:\Windows\Temp
+
+
+
 Eliminar carpetas :
 rm -rf nombre_de_la_carpeta
 
