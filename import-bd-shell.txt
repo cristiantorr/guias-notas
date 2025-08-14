@@ -4,7 +4,7 @@ $ wp search-replace 'https://stg-happycity.smdigitalstage.com' 'http://happy-cit
 wp search-replace --url=https://stg-yokomotor.smdigitalstage.com 'https://stg-yokomotor.smdigitalstage.com' 'http://yokomotor.local' --recurse-objects --network --skip-columns=guid --skip-tables=wp_users
 
 import BD
-mysql -u root -proot -f dbmultisite_local < stgducales.sql
+mysql -u root -proot -f 24_julio_back < purebli9_wp940.sql
 
  wp user create jeguisao jeguisao@example.com --role=administrator
 
