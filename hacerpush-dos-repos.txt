@@ -1,0 +1,43 @@
+git remote -v
+Probablemente veas algo como:
+
+scss
+Copiar
+Editar
+origin  git@gitlab.com:usuario/proyecto.git (fetch)
+origin  git@gitlab.com:usuario/proyecto.git (push)
+2️⃣ Agregar el segundo remote
+Agrega GitHub como un nuevo nombre de remote:
+
+bash
+Copiar
+Editar
+git remote add github git@github.com:usuario/proyecto.git
+3️⃣ Configurar push múltiple en el mismo remote
+Puedes decirle a origin que tenga dos URLs de push:
+
+bash
+Copiar
+Editar
+git remote set-url --add --push origin git@gitlab.com:usuario/proyecto.git
+git remote set-url --add --push origin git@github.com:usuario/proyecto.git
+Si ahora revisas:
+
+bash
+Copiar
+Editar
+git remote -v
+Verás:
+
+git remote set-url --add --push origin https://gitlab.com/pureblink/splashspage.git
+git remote set-url --add --push origin git@github.com:cristiantorr/splashspage.git
+scss
+Copiar
+Editar
+origin  git@gitlab.com:usuario/proyecto.git (fetch)
+origin  git@gitlab.com:usuario/proyecto.git (push)
+origin  git@github.com:usuario/proyecto.git (push)
+github  git@github.com:usuario/proyecto.git (fetch)
+
+Eliminar
+git remote set-url --delete --push origin git@gitlab.com:pureblink/splashspage.git
