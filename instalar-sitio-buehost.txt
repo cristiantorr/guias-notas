@@ -1,0 +1,60 @@
+Paso 1: Crea la carpeta en tu hosting
+
+Entra al cPanel de Bluehost.
+
+Ve a File Manager (Administrador de Archivos).
+
+Dentro de la carpeta principal del sitio (public_html), navega a stage (si no existe, créala).
+
+Dentro de stage, crea la carpeta miproyecto.
+
+📂 La ruta quedará así:public_html/stage/miproyecto/
+
+
+Paso 2: Descarga o instala WordPress
+
+Tienes dos opciones:
+
+Opción A: Instalador de WordPress de Bluehost
+
+En cPanel ve a My Sites → Create Site.
+
+Cuando te pida la ruta de instalación, elige stage/miproyecto.
+
+Finaliza la instalación.
+
+Opción B: Instalación manual
+
+Descarga WordPress desde wordpress.org
+.
+
+Descomprime el .zip en tu PC.
+
+Sube los archivos a la carpeta public_html/stage/miproyecto/ usando el File Manager o FTP.
+
+Paso 3: Crea la base de datos
+
+En cPanel ve a MySQL Databases.
+
+Crea una nueva base de datos (ej: wp_miproyecto).
+
+Crea un usuario MySQL y asígnale contraseña.
+
+Asocia el usuario a la base de datos con ALL PRIVILEGES.
+(Guarda estos datos porque los usarás en la instalación).
+
+Paso 4: Ejecuta la instalación de WordPress
+
+Abre en tu navegador:
+👉 https://pureblink.com/stage/miproyecto
+
+Te saldrá el asistente de WordPress.
+
+Ingresa los datos de la base de datos que creaste.
+
+Crea tu usuario administrador de WordPress.
+
+Finaliza la instalación.
+
+Una vez instalado, tu acceso será:
+👉 https://pureblink.com/stage/miproyecto/wp-admin
