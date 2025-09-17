@@ -4,9 +4,7 @@ BORRAR ARCHIVOS POR MEDIO DE WINDOWS R
 %temp%
 C:\Windows\Temp
 
-
-
-Eliminar carpetas :
+Eliminar carpetas para windows :
 rm -rf nombre_de_la_carpeta
 
 1. rmdir nombre_de_la_carpeta
