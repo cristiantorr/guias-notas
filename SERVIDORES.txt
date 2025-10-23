@@ -1,3 +1,12 @@
 buscar archivosospechosos
 
 find /opt/bitnami/wordpress/ -type f -name "*.php" -mtime -7
+
+
+df -h                        # Muestra el espacio total y libre del disco (formato legible)
+du -sh /ruta/carpeta         # Muestra el peso total de una carpeta específica
+du -sh * | sort -h           # Lista carpetas/archivos por peso de menor a mayor
+cd /var/www/html             # Entra a una carpeta antes de ejecutar los comandos
+du -sh ~                     # Muestra el peso total del directorio del usuario (home)
+sudo apt install ncdu -y     # Instala la herramienta visual de análisis de disco
+ncdu /                       # Abre interfaz interactiva para explorar el uso del disco
