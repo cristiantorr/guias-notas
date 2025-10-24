@@ -1,0 +1,73 @@
+t3.medium
+
+Tipo: Burstable general-purpose
+vCPU: 2
+RAM: 4 GB
+Costo aprox: ~US$ 0.0416/h → ~US$ 30/mes
+Ventajas:
+
+Muy buen equilibrio entre costo y rendimiento.
+
+Escala bien desde t3.micro hasta t3.large sin cambiar configuración.
+
+Perfecta para WordPress optimizado con caché (LiteSpeed, Redis, o CloudFront).
+Uso típico: Sitio WordPress mediano a grande (5k–100k visitas/mes).
+
+Es la más rentable para proyectos grandes con optimización.
+
+Instancia EC2	t3.medium
+Disco EBS	gp3, 50 GB
+Sistema operativo	Ubuntu 22.04 LTS
+Web Server	OpenLiteSpeed
+Base de datos	MySQL 8 o MariaDB 10.6
+PHP	8.2
+Cache	Redis + LiteSpeed Cache
+CDN	CloudFront o Cloudflare
+Costo total	~US$ 35–40/mes
+
+Instancia: t3.medium (2 vCPU, 4 GB RAM). Esa sigue siendo una muy buena opción, te da margen para media pesada sin gastar una fortuna.
+
+Almacenamiento EBS: Volumen SSD tipo gp3, mínimo 100 GB (o más según la cantidad de medios), con IOPS suficientes (por defecto gp3 da buen rendimiento).
+
+Considera usar un bucket de Amazon S3 para almacenar vídeos/imágenes grandes que no necesitan estar en el servidor EC2 directamente, y servirlos vía CDN para reducir carga.
+
+Usa un servicio de CDN (por ejemplo CloudFront) para las imágenes/videos, que mejore velocidad geográfica y reduzca carga en el servidor.
+
+Usa caché estático agresiva para imágenes/vídeos (headers de expiración, etc.), y optimización de formato (WebP, lazy-loading).
+
+Puedes reducir la base de datos a un tamaño más modesto si no muchos plugins: quizás puedes alojarla en el mismo servidor EC2 o en un RDS pequeño si prefieres separación.
+
+
+A) Guardar medios en EBS (100 GB gp3) — todo en un solo EC2
+
+EC2 (t3.medium): $30 / mes. 
+Vantage
+
+EBS gp3 100 GB: $8 / mes. 
+Amazon Web Services, Inc.
+
+Data out (ejemplo):
+
+100 GB traf. saliente en el mes → AWS da 100 GB gratis → $0 DTO. Total ≈ $38 / mes.
+
+500 GB traf. (500 − 100 gratis = 400 GB cobrables) → 400 × $0.09 ≈ $36 → Total ≈ $74 / mes. 
+CloudZero
+
+1 TB (≈1024 GB) → (1024 − 100) = 924 × $0.09 ≈ $83.16 → Total ≈ $121 / mes.
+
+B) Guardar medios en S3 (100 GB) + CloudFront para entrega (recomendado para muchos medios)
+
+EC2 (t3.medium): $30 / mes. 
+Vantage
+
+S3 Standard 100 GB: $2.30 / mes. 
+CloudZero
+
+CloudFront data out (ejemplo):
+
+100 GB traf. → 100 × $0.085 ≈ $8.50 → Total ≈ $40.80 / mes. 
+Amazon Web Services, Inc.
+
+500 GB traf. → 500 × $0.085 = $42.50 → Total ≈ $74.80 / mes.
+
+1 TB (1024 GB) → 1024 × $0.085 = $87.04 → Total ≈ $119.34 / mes.
