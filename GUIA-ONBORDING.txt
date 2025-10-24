@@ -1,0 +1,31 @@
+Imágenes: máximo 200–300 KB, formato WebP, dimensiones adecuadas a su uso (ej: 1920px ancho máximo para banners).
+
+Nombres de archivo: descriptivos y en minúsculas (ej: casa-losani-exterior.webp).
+
+SEO de imágenes: siempre llenar Alt Text con descripción clara y keywords.
+
+Compresión automática: usar plugin (ShortPixel, Imagify o WebP Express).
+
+Videos: no subir al servidor, usar YouTube, Vimeo o CDN.
+
+Documentos PDF: máximo 2–5 MB, comprimir antes de subir.
+
+Sliders/Banners: evitar muchos slides, afecta rendimiento → máximo 3–5.
+
+Contenido duplicado: evitar copiar texto de otras páginas, afecta SEO.
+
+Títulos y Headings: 1 <h1> por página, luego jerarquía correcta (h2 → h3).
+
+URLs limpias: sin fechas ni caracteres raros, palabras clave relevantes.
+
+Plugins: instalar solo lo necesario, mantener actualizados, eliminar los inactivos.
+
+Widgets/Builders: evitar exceso de animaciones y efectos pesados.
+
+Videos autoplay: evitar en mobile, consume datos y reduce velocidad.
+
+Optimización de homepage: no cargar todo ahí, distribuir contenido por secciones.
+
+Seguridad: usar contraseñas fuertes, activar 2FA y backups automáticos.
+
+Roles de usuario: cada quien con permisos mínimos necesarios.
