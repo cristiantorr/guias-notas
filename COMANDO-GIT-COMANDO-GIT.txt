@@ -59,7 +59,7 @@ git clean -f
 
 19.Esto le dice a Git que no preste atención a los cambios locales de ese archivo. Es perfecto para archivos generados (como los CSS de Tailwind), cuando no quieres subirlos ni que te aparezcan como modificados.
 
-git update-index --assume-unchanged assets/css/output.css
+git update-index --assume-unchanged includes/data_communities.php
 
  -- Para revertir esto (volver a rastrearlo):
 git update-index --no-assume-unchanged assets/css/output.css
