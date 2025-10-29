@@ -1,8 +1,8 @@
 * Crear proyecto
 
-npm create astro@latest
+npm create astro@latest 
 
-* Empezar proyecto
+* Empezar proyecto para luego
 npm run dev
 
 * Instalar tailwind 
