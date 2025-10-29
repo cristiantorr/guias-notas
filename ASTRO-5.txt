@@ -2,7 +2,7 @@
 
 npm create astro@latest 
 
-* Empezar proyecto para luego
+* Empezar proyecto para luego inicializarlo
 npm run dev
 
 * Instalar tailwind 
