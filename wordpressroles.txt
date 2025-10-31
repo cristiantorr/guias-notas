@@ -1,0 +1,96 @@
+🧩 WordPress Default User Roles (Explained in English)
+1. Administrator
+
+Full control of the WordPress site.
+
+Capabilities:
+
+Add, edit, delete any content (posts, pages, custom post types).
+
+Manage themes, plugins, and settings.
+
+Add, edit, or remove users and roles.
+
+Access all parts of the dashboard.
+
+Typical use:
+Website owners, developers, or main site managers.
+
+2. Editor
+
+Manages all content, but not site settings or users.
+
+Capabilities:
+
+Create, edit, publish, and delete any posts or pages, including those created by others.
+
+Manage categories, tags, and comments.
+
+Cannot change themes, plugins, or user accounts.
+
+Typical use:
+Content managers, marketing teams, or newsroom editors.
+
+3. Author
+
+Can manage and publish only their own content.
+
+Capabilities:
+
+Create, edit, publish, and delete their own posts.
+
+Upload images and media.
+
+Cannot edit or delete others’ posts.
+
+No access to pages, plugins, themes, or users.
+
+Typical use:
+Writers, bloggers, or contributors who post regularly.
+
+4. Contributor
+
+Can write, but cannot publish.
+
+Capabilities:
+
+Create and edit their own draft posts.
+
+Cannot upload images.
+
+Must wait for an Editor or Administrator to review and publish their content.
+
+Typical use:
+Guest writers, external collaborators, or content interns.
+
+5. Subscriber
+
+Can read content and manage their profile only.
+
+Capabilities:
+
+Read posts and pages.
+
+Comment (if comments are enabled).
+
+Edit their own profile (password, email, etc.).
+
+Cannot write, edit, or manage anything else.
+
+Typical use:
+Registered members, newsletter subscribers, or forum users.
+
+6. Super Admin (Multisite only)
+
+Exists only on WordPress Multisite networks.
+
+Capabilities:
+
+Has all Administrator permissions across all sites in the network.
+
+Can create, delete, and manage entire sites.
+
+Manage network-wide themes, plugins, and users.
+
+Typical use:
+Network owners or system administrators in multisite environments.
