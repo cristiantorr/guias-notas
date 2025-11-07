@@ -13,6 +13,10 @@ sudo chown -R bitnami:daemon .
 COMPRIMIR DENTRO DEL SERVIDOR 
 
 zip -r zentro-theme.zip zentro-theme
+
+DESCOMPRIMIR
+unzip zentro-theme.zip
+
 zip -r uploads.zip uploads
 DESCARGAR DESDE EL PC 
 
