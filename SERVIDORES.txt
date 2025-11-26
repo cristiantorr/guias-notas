@@ -1,4 +1,4 @@
-buscar archivosospechosos
+buscar archivos sospechosos
 
 find /opt/bitnami/wordpress/ -type f -name "*.php" -mtime -7
 
