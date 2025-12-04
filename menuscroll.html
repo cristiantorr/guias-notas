@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      margin: 0;
+      /* si tu header tiene una altura fija, puedes añadir padding-top para que no tape contenido */
+      padding-top: 60px;
+      /* ajusta según tu header */
+    }
+
+    #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      /* ajusta a tu header */
+      background: #fff;
+      /* o lo que uses */
+      transition: top 0.3s ease-in-out;
+      z-index: 9999;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="header">
+    <!-- tu menú / nav aquí -->
+    <nav>Mi Menú</nav>
+  </header>
+
+  <main>
+    <!-- contenido largo para hacer scroll -->
+    <div style="height:2000px; background:#eee;">
+      Contenido...
+    </div>
+    <div style="height:2000px; background:#eee;">
+      Contenido...
+    </div>
+    <div style="height:2000px; background:#eee;">
+      Contenido...
+    </div>
+    <div style="height:2000px; background:#eee;">
+      Contenido...
+    </div>
+  </main>
+
+  <script>
+    let prevScrollpos = window.pageYOffset;
+
+    window.onscroll = function () {
+      let currentScrollPos = window.pageYOffset;
+
+      if (prevScrollpos > currentScrollPos) {
+        // scroll up → mostrar
+        document.getElementById("header").style.top = "0";
+      } else {
+        // scroll down → ocultar
+        document.getElementById("header").style.top = "-60px"; // igual a la altura del header
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+
+</body>
+
+</html>
