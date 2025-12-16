@@ -47,3 +47,8 @@ rm ~/stack/wordpress/wp-content/themes/zentro-theme.zip
  Outfit-ExtraBold.ttf
 
  Outfit-Medium.ttf
+
+ DESCARGA BD
+mysqldump -u TU_USUARIO -p NOMBRE_BASE > backup.sql
+
+scp usuario@IP_DEL_SERVIDOR:/ruta/completa/backup.sql C:\Users\TuUsuario\Downloads\
