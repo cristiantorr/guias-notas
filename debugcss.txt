@@ -81,3 +81,16 @@ img {
 button:not([aria-label]):not(:has(*)) {
   outline: 3px solid red;
 }
+
+10. Debug activable por clase (recomendado)
+.debug * {
+  outline: 1px solid rgba(255,0,0,.4);
+}
+
+.debug img {
+  outline: 2px solid lime;
+}
+
+.debug section {
+  outline: 2px solid blue;
+}
