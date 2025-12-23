@@ -33,3 +33,14 @@ Flexbox
   display: flex !important;
   outline: 1px solid red;
 }
+
+Grid
+* {
+  outline: 1px solid red;
+}
+
+*::before {
+  content: attr(class);
+  font-size: 10px;
+  color: red;
+}
