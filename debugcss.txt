@@ -55,3 +55,8 @@ img {
 * {
   background-color: rgba(255,0,0,.05);
 }
+6. Debug de elementos invisibles
+*[style*="display: none"],
+*[style*="visibility: hidden"] {
+  outline: 2px dashed red;
+}
