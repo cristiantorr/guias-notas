@@ -67,3 +67,12 @@ img {
   position: relative;
   z-index: 1;
 }
+
+8. Debug de interacción (hover / focus)
+*:hover {
+  outline: 2px solid blue;
+}
+
+*:focus {
+  outline: 2px solid orange;
+}
