@@ -8,4 +8,12 @@ section {
   outline: 1px solid rgba(0, 0, 255, 0.5);
 }
 
-DEBUG PARA CSS
+
+1. Debug de overflow (el más común)
+
+Para encontrar qué elemento rompe el ancho:
+
+* {
+  outline: 1px solid red;
+  max-width: 100vw;
+}
