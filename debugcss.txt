@@ -44,3 +44,9 @@ Grid
   font-size: 10px;
   color: red;
 }
+
+4. Debug de imágenes rotas / mal escaladas
+img {
+  background: rgba(0,255,0,.1);
+  outline: 2px dashed lime;
+}
