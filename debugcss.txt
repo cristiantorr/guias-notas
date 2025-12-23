@@ -26,3 +26,10 @@ Excelente para entender layouts complejos:
 * * { outline: 1px solid green; }
 * * * { outline: 1px solid blue; }
 * * * * { outline: 1px solid orange; }
+
+3. Debug de grid y flex (CLAVE)
+Flexbox
+* {
+  display: flex !important;
+  outline: 1px solid red;
+}
