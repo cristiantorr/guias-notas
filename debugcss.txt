@@ -76,3 +76,8 @@ img {
 *:focus {
   outline: 2px solid orange;
 }
+
+9. Debug de accesibilidad (muy top)
+button:not([aria-label]):not(:has(*)) {
+  outline: 3px solid red;
+}
