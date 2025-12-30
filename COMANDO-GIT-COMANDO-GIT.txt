@@ -82,7 +82,7 @@ refactor: Cambios en el código que no corrigen errores ni añaden funcionalidad
 
 test: Añade o modifica pruebas.
  
- -----------------------
+
 
 
 CLONAR REPOSITORIOS
