@@ -1,4 +1,4 @@
-* Crear proyecto
+* Crear proyecto comn astro
 
 npm create astro@latest 
 
