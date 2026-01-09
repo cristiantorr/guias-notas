@@ -2,7 +2,7 @@
 Guía de Testing y Automatización para Desarrolladores Web
 =========================================================
 
-Introducción
+Introducción testing
 ------------
 El testing y la automatización son prácticas esenciales en el desarrollo moderno.
 Permiten asegurar la calidad del software, prevenir errores y reducir tiempos de entrega.
