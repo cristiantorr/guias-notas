@@ -10,3 +10,15 @@
   - Eslint
   - image preview
   
+
+editores
+
+Visual Studio Code (VS Code)
+🔹 Gratuito, extensible, muy popular, soporta casi todos los lenguajes.
+
+Sublime Text
+🔹 Muy rápido y ligero, ideal para edición rápida.
+
+Atom (descontinuado, pero aún usado en proyectos antiguos)
+🔹 Editor hackeable creado por GitHub.
+
