@@ -32,3 +32,14 @@ Neovim
 🔹 Versión moderna de Vim, muy usado por desarrolladores avanzados.
 
 
+Emacs
+🔹 Extremadamente configurable, casi un sistema operativo.
+
+Brackets
+🔹 Orientado a desarrollo web, con vista previa en vivo.
+
+BBEdit (macOS)
+🔹 Editor profesional para Mac, muy estable.
+
+UltraEdit
+🔹 Editor comercial, potente para archivos grandes.
