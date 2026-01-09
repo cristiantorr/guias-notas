@@ -22,3 +22,13 @@ Sublime Text
 Atom (descontinuado, pero aún usado en proyectos antiguos)
 🔹 Editor hackeable creado por GitHub.
 
+Notepad++
+🔹 Ligero, solo Windows, ideal para tareas simples.
+
+Vim
+🔹 Muy potente, basado en teclado, curva de aprendizaje alta.
+
+Neovim
+🔹 Versión moderna de Vim, muy usado por desarrolladores avanzados.
+
+
