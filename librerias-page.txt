@@ -1,0 +1,17 @@
+Librerías SVG populares para web/UI
+
+(ideal si quieres incluir iconos como componentes o vía CDN)
+
+Bootstrap Icons – open source para interfaces.
+
+Feather Icons – simples y minimalistas.
+
+Heroicons (para interfaces modernas)
+
+Remix Icon – amplio set en SVG.
+
+Ionicons – icons open source para web y móviles.
+
+Tabler Icons – gran librería SVG con estilo consistente.
+
+Simple Icons – logos de marcas en SVG.
