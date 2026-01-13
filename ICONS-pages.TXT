@@ -1,0 +1,31 @@
+
+ICONOS EN VERCEL PARA PATHS
+
+https://svgl.app/
+Bibliotecas completas de SVG
+
+SVG Owl – millones de vectores e íconos SVG listos para descargar, personalizar y usar sin registro.
+
+OpenSVGIcons – librería con miles de iconos SVG listos para web y componentes (React/Vue).
+
+SVG Repo – gran repositorio de vectores e íconos libres para cualquier proyecto.
+
+IconUncle – biblioteca de SVG gratuita, con muchos iconos listos para usar.
+
+📦 Colecciones libres y estilo UI
+
+IcoMoon – selecciona los iconos que quieras y genera tu propia fuente o SVG sprite.
+
+FreeSVGIcons – sitio con cientos de miles de iconos para descargar y personalizar.
+
+IconicSets – set gratuito de íconos SVG y PNG para diseñadores y desarrolladores.
+
+Tilda Free Icons – +700 íconos SVG gratis (requiere atribución).
+
+🧰 Más recursos útiles (catálogos o buscadores)
+
+(puede que incluyan descargas gratis + secciones pagas)
+
+Flaticon – enorme colección con muchos iconos gratuitos (con atribución).
+
+MeetIcon – motor de búsqueda con +230,000 SVG listos para web.
