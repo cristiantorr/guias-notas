@@ -9,6 +9,7 @@ SERVIDORES DE NOMBRE :
 NS1.BLUEHOST.COM
 NS2.BLUEHOST.COM
 
+wp core download --locale=en_EN
 
 
 1. Registros MX (para correo)
