@@ -26,7 +26,7 @@ sudo chown -R bitnami:daemon .
 
 COMPRIMIR DENTRO DEL SERVIDOR 
 
-zip -r zentro-theme.zip zentro-theme
+zip -r  pinnacle_template.zip  pinnacle_template
 
 DESCOMPRIMIR
 unzip zentro-theme.zip
@@ -34,21 +34,23 @@ unzip zentro-theme.zip
 zip -r uploads.zip uploads
 DESCARGAR DESDE EL PC 
 
-scp -i "C:\Users\cristian\Documents\bitnami-key.pem" bitnami@44.224.173.167:~/stack/wordpress/wp-content/uploads.zip "C:\Users\cristian\Desktop"
-
+scp -i "C:/Users/User/.ssh/zentro.pem" bitnami@44.224.173.167:~/stack/wordpress/wp-content/themes/zentro-theme.zip "C:\Users\User\Desktop\zentro"
 scp -i "C:/Users/User/.ssh/zentro.pem" bitnami@44.224.173.167:~/stack/wordpress/wp-content/uploads.zip "C:\Users\User\Local Sites\pureblink-zentro\app\public\wp-content"
+scp -i "C:/Users/User/.ssh/zentro.pem" bitnami@44.224.173.167:~/stack/wordpress/backup.sql  "C:\Users\User\Desktop\zentro"
+scp -i "C:/Users/User/.ssh/pinnacle.pem" bitnami@3.144.121.122:~/stack/wordpress/backup.sql  "C:\Users\User\Local Sites\pinnacle-production\app\public\"
+
 
 ELIMINAR CARPETA COMPRIMIDA 
 
 rm ~/stack/wordpress/wp-content/themes/zentro-theme.zip
 
+Outfit-ExtraBold.ttf
 
+Outfit-Medium.ttf
 
- Outfit-ExtraBold.ttf
+DESCARGA BD
+mysqldump -u pureblink -p xjd57OhdZ!2jExnd > backup.sql
 
- Outfit-Medium.ttf
-
- DESCARGA BD
-mysqldump -u TU_USUARIO -p NOMBRE_BASE > backup.sql
+sudo  wp db export pinnacle_website.sql
 
 scp usuario@IP_DEL_SERVIDOR:/ruta/completa/backup.sql C:\Users\TuUsuario\Downloads\
