@@ -37,7 +37,7 @@ DESCARGAR DESDE EL PC
 scp -i "C:/Users/User/.ssh/zentro.pem" bitnami@44.224.173.167:~/stack/wordpress/wp-content/themes/zentro-theme.zip "C:\Users\User\Desktop\zentro"
 scp -i "C:/Users/User/.ssh/zentro.pem" bitnami@44.224.173.167:~/stack/wordpress/wp-content/uploads.zip "C:\Users\User\Local Sites\pureblink-zentro\app\public\wp-content"
 scp -i "C:/Users/User/.ssh/zentro.pem" bitnami@44.224.173.167:~/stack/wordpress/backup.sql  "C:\Users\User\Desktop\zentro"
-scp -i "C:/Users/User/.ssh/pinnacle.pem" bitnami@3.144.121.122:~/stack/wordpress/backup.sql  "C:\Users\User\Local Sites\pinnacle-production\app\public\"
+scp -i "C:/Users/User/.ssh/pinnacle.pem" bitnami@3.144.121.122:~/stack/wordpress/backup.sql  "C:\Users\User\Local Sites\pinnacle-production\app"
 
 
 ELIMINAR CARPETA COMPRIMIDA 
@@ -49,8 +49,8 @@ Outfit-ExtraBold.ttf
 Outfit-Medium.ttf
 
 DESCARGA BD
-mysqldump -u pureblink -p xjd57OhdZ!2jExnd > backup.sql
+sudo mysqldump -u pureblink -p "xjd57OhdZ!2jExnd" pinnacle_website > backup.sql
 
-sudo  wp db export pinnacle_website.sql
+sudo mysqldump -u pureblink -p > backup.sql
 
 scp usuario@IP_DEL_SERVIDOR:/ruta/completa/backup.sql C:\Users\TuUsuario\Downloads\
