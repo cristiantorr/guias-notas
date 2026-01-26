@@ -1,43 +1,44 @@
 COMANDOS:
 
-* ABRIR TERMINAL : wsl --user root
-* CAMBIAR PASSWORD DE USUARIO: passwd LOQUESEA AQUÍ
-* VERIFICAR SESIÓN DE USUARIO: whoami
+- ABRIR TERMINAL : wsl --user root
+- CAMBIAR PASSWORD DE USUARIO: passwd LOQUESEA AQUÍ
+- VERIFICAR SESIÓN DE USUARIO: whoami para root
 
-----------
-* DATE : Muestra fecha actual
-* UPTIME: Muestra tiempo transcurrido desde que inicio el equipo la última vez
-* CAL: Calendario Actual
-* DF: Muestra el espacio libre del disco duro
-* WHOAMI: Muestra el nombre del usuario
-* lS: Lista de los archivos de la carpeta actual o una carpeta dada ejempl: ls Documents/
-* CD: Navegar entre carpetas ejemplo: cd Documents/ nos ubica en "/Users/<usuario>/Documents"
-* PWD: Nos muestra la ruta absoluta del directorio actual y así sabemos donde estamos ubicados.
-* TOUCH: Cra un archivo nuevo dada una ruta y/o nombre EJ: touch chao
-* CAT: Imprime el contenido de un archivo dada su ruta ej: cat chao
-* MORE: Es muy similar a cat solo  que nos permite navegar usando controles tipo Vim.
-* SUDO: Ejecutar comando coo administrador
-* RM: Remover documento
-* -F: Forzar
-* MV: Renombrar archivos o carpetar
-* CP: Copiar Archivos
+---
 
--------------
+- DATE : Muestra fecha actual
+- UPTIME: Muestra tiempo transcurrido desde que inicio el equipo la última vez
+- CAL: Calendario Actual
+- DF: Muestra el espacio libre del disco duro
+- WHOAMI: Muestra el nombre del usuario
+- lS: Lista de los archivos de la carpeta actual o una carpeta dada ejempl: ls Documents/
+- CD: Navegar entre carpetas ejemplo: cd Documents/ nos ubica en "/Users/<usuario>/Documents"
+- PWD: Nos muestra la ruta absoluta del directorio actual y así sabemos donde estamos ubicados.
+- TOUCH: Cra un archivo nuevo dada una ruta y/o nombre EJ: touch chao
+- CAT: Imprime el contenido de un archivo dada su ruta ej: cat chao
+- MORE: Es muy similar a cat solo que nos permite navegar usando controles tipo Vim.
+- SUDO: Ejecutar comando coo administrador
+- RM: Remover documento
+- -F: Forzar
+- MV: Renombrar archivos o carpetar
+- CP: Copiar Archivos
+
+---
+
 ATAJOS TERMINAL:
 
-Ctrl-a:	Ir al principio de la linea
-Ctrl-e:	Ir al final de la linea.
-Ctrl-b:	Retroceder un caracter.
-Alt-b:	Retroceder una palabra
-Ctrl-f:	Avanzar un caracter
-Alt-f:	Avanzar una palabra.
-Alt-] x:	Avanzar hasta la siguiente ocurrencia del caracter x.
-Alt-Ctrl-] x:	Retroceder hasta la anterior ocurrencia del caracter x.
-Ctrl-u:	Borrar desde el cursor hasta el principio de la linea
-Ctrl-k:	Borrar desde el cursor hasta el final del linea
-Ctrl-w:	Borrar desde el cursor hasta el principio de la palabra
-Ctrl-Shift-V:	Pega el texto del portapapeles
-Ctrl-Shift-C:	Copia el texto del portapapeles
-Ctrl-l:	borra la pantalla
+Ctrl-a: Ir al principio de la linea
+Ctrl-e: Ir al final de la linea.
+Ctrl-b: Retroceder un caracter.
+Alt-b: Retroceder una palabra
+Ctrl-f: Avanzar un caracter
+Alt-f: Avanzar una palabra.
+Alt-] x: Avanzar hasta la siguiente ocurrencia del caracter x.
+Alt-Ctrl-] x: Retroceder hasta la anterior ocurrencia del caracter x.
+Ctrl-u: Borrar desde el cursor hasta el principio de la linea
+Ctrl-k: Borrar desde el cursor hasta el final del linea
+Ctrl-w: Borrar desde el cursor hasta el principio de la palabra
+Ctrl-Shift-V: Pega el texto del portapapeles
+Ctrl-Shift-C: Copia el texto del portapapeles
+Ctrl-l: borra la pantalla
 Ctrl-r: Texto
-
