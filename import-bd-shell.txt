@@ -7,10 +7,3 @@ import BD
 mysql -u root -proot -f 24_julio_back < purebli9_wp940.sql
 
  wp user create jeguisao jeguisao@example.com --role=administrator
-
-
- <b>Warning</b>:  Undefined array key 6 in <b>C:\Users\Cristian Torres\Local Sites\comfama\app\public\wp-content\plugins\custom-row-plugin\custom-row-plugin.php</b> on line <b>123</b><br />
-
-
- uploads/backwpup/24e3bf/backups/
-
