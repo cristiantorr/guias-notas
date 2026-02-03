@@ -39,6 +39,7 @@ scp -i "C:/Users/User/.ssh/zentro.pem" bitnami@44.224.173.167:~/stack/wordpress/
 scp -i "C:/Users/User/.ssh/zentro.pem" bitnami@44.224.173.167:~/stack/wordpress/backup.sql  "C:\Users\User\Desktop\zentro"
 scp -i "C:/Users/User/.ssh/pinnacle.pem" bitnami@3.144.121.122:~/stack/wordpress/backup.sql  "C:\Users\User\Local Sites\pinnacle-production\app"
 
+scp -i "C:/Users/User/.ssh/pinnacle.pem" bitnami@3.144.121.122:~/stack/wordpress/backup.sql  "C:\Users\User\Local Sites\rentals"
 
 ELIMINAR CARPETA COMPRIMIDA 
 
@@ -49,8 +50,8 @@ Outfit-ExtraBold.ttf
 Outfit-Medium.ttf
 
 DESCARGA BD
-sudo mysqldump -u pureblink -p "xjd57OhdZ!2jExnd" pinnacle_website > backup.sql
+sudo mysqldump -u pureblink -p xjd57OhdZ!2jExnd pinnacle_website > backup.sql
 
-sudo mysqldump -u pureblink -p > backup.sql
+sudo mysqldump -u pureblink -p > backup_mynew.sql
 
 scp usuario@IP_DEL_SERVIDOR:/ruta/completa/backup.sql C:\Users\TuUsuario\Downloads\
