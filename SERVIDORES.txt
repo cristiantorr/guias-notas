@@ -55,3 +55,6 @@ sudo mysqldump -u pureblink -p xjd57OhdZ!2jExnd pinnacle_website > backup.sql
 sudo mysqldump -u pureblink -p > backup_mynew.sql
 
 scp usuario@IP_DEL_SERVIDOR:/ruta/completa/backup.sql C:\Users\TuUsuario\Downloads\
+
+
+✅ 1. Ver cuánto pesa el theme completo
