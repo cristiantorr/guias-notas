@@ -65,3 +65,6 @@ du -sh * | sort -h
 
 Si quieres ver los más pesados primero:
 du -sh * | sort -hr
+
+✅ 3. Ver los 20 archivos más pesados dentro del theme
+find . -type f -exec du -h {} + | sort -hr | head -20
