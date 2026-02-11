@@ -62,3 +62,6 @@ du -sh .
 
 ✅ 2. Ver qué carpetas pesan más dentro del theme
 du -sh * | sort -h
+
+Si quieres ver los más pesados primero:
+du -sh * | sort -hr
