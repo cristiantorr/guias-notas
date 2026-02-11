@@ -78,3 +78,7 @@ cd ~/stack/wordpress/wp-content
 
 ✅ 6. Encontrar backups ZIP o SQL pesados
 find . -type f \( -name "*.zip" -o -name "*.sql" -o -name "*.tar.gz" \) -exec ls -lh {} \;
+
+✅ 7. Revisar uploads (lo más común)
+cd ~/stack/wordpress/wp-content/uploads
+du -sh * | sort -hr | head -20
