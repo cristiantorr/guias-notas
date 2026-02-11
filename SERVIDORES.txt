@@ -74,3 +74,7 @@ find . -type f -size +10M -exec ls -lh {} \;
 
 ✅ 5. Ver carpetas más pesadas en todo wp-content
 cd ~/stack/wordpress/wp-content
+
+
+✅ 6. Encontrar backups ZIP o SQL pesados
+find . -type f \( -name "*.zip" -o -name "*.sql" -o -name "*.tar.gz" \) -exec ls -lh {} \;
