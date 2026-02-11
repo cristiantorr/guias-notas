@@ -59,3 +59,6 @@ scp usuario@IP_DEL_SERVIDOR:/ruta/completa/backup.sql C:\Users\TuUsuario\Downloa
 
 ✅ 1. Ver cuánto pesa el theme completo
 du -sh .
+
+✅ 2. Ver qué carpetas pesan más dentro del theme
+du -sh * | sort -h
