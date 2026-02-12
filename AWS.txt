@@ -71,3 +71,48 @@ Amazon Web Services, Inc.
 500 GB traf. → 500 × $0.085 = $42.50 → Total ≈ $74.80 / mes.
 
 1 TB (1024 GB) → 1024 × $0.085 = $87.04 → Total ≈ $119.34 / mes.
+
+
+SACAR REPORTE COMO RAM CPU 
+
+
+Entonces, para tu caso (reporte al cliente)
+
+Si solo quieres poner:
+
+CPU %
+
+RAM %
+
+Disk %
+
+Lo mejor y más barato es:
+
+🔥 Opción recomendada: sacarlo por SSH con comandos
+
+No cuesta nada y es inmediato.
+
+✅ Comandos rápidos para sacar datos reales
+CPU (instantáneo)
+top
+
+
+o:
+
+uptime
+
+RAM
+free -m
+
+
+Ejemplo:
+
+Mem: 1000 total, 520 used → 52%
+
+Disco
+df -h
+
+
+Ejemplo:
+
+/dev/xvda1 45% used
