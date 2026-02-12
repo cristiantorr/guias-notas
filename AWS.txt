@@ -105,14 +105,3 @@ RAM
 free -m
 
 
-Ejemplo:
-
-Mem: 1000 total, 520 used → 52%
-
-Disco
-df -h
-
-
-Ejemplo:
-
-/dev/xvda1 45% used
