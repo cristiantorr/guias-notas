@@ -95,15 +95,11 @@ No cuesta nada y es inmediato.
 ✅ Comandos rápidos para sacar datos reales
 CPU (instantáneo)
 top
-
-
 o:
-
 uptime
 
 RAM
 free -m
-
 
 Ejemplo:
 
@@ -111,7 +107,6 @@ Mem: 1000 total, 520 used → 52%
 
 Disco
 df -h
-
 
 Ejemplo:
 
