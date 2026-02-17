@@ -14,3 +14,5 @@ npm run lint para revisar errores de estilo y código,
 npm install para instalar dependencias, 
 npm install nombre-paquete para agregar una librería nueva, 
 npm uninstall nombre-paquete para eliminarla, 
+next export para generar una versión estática del sitio (si aplica), 
+y npx next telemetry disable para desactivar el envío de telemetría de Next.js.
