@@ -4,3 +4,8 @@ Para proyectos next js
 npx create-next-app@latest my-app --yes
 cd my-app
 npm run dev
+
+
+
+En Next.js puedes usar comandos como: npx create-next-app@latest mi-app para crear un proyecto nuevo, npm run dev para iniciar el servidor en modo desarrollo, 
+npm run build para compilar la aplicación para producción, 
