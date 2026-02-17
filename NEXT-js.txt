@@ -9,3 +9,6 @@ npm run dev
 
 En Next.js puedes usar comandos como: npx create-next-app@latest mi-app para crear un proyecto nuevo, npm run dev para iniciar el servidor en modo desarrollo, 
 npm run build para compilar la aplicación para producción, 
+npm run start para ejecutarla ya compilada,
+npm run lint para revisar errores de estilo y código, 
+npm install para instalar dependencias, 
