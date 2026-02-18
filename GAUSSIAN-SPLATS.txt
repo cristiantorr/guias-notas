@@ -1,0 +1,159 @@
+✅ 1. Luma AI (lo más usado en real estate)
+
+Luma es el rey ahora mismo para capturar espacios interiores.
+
+📌 Ejemplos reales:
+
+Casas
+
+Apartamentos
+
+Airbnbs
+
+Tours virtuales
+
+👉 Entra aquí y mira demos:
+
+🔹 https://lumalabs.ai
+
+Busca en su galería:
+
+“real estate”
+
+“apartment”
+
+“house tour”
+
+✅ 2. Polycam (escaneo inmobiliario)
+
+Polycam es súper usado por agentes inmobiliarios porque es fácil:
+
+📌 Capturas con iPhone → exportas .splat
+
+👉 Galería:
+
+🔹 https://poly.cam/explore
+
+Busca:
+
+home
+
+room
+
+interior
+
+✅ 3. Nerfstudio Showcase (nivel pro)
+
+Aquí ves proyectos más técnicos tipo arquitectura y escaneo 3D:
+
+🔹 https://docs.nerf.studio
+
+En showcase hay escenas de interiores reales.
+
+✅ 4. GaussianSplats3D Viewer Examples (GitHub)
+
+El repo oficial tiene ejemplos listos:
+
+🔹 https://github.com/mkkellogg/GaussianSplats3D
+
+Ahí puedes ver:
+
+viewer completo
+
+controles
+
+carga local
+
+escenas múltiples
+
+✅ 5. PlayCanvas + Splats (web tours)
+
+PlayCanvas está integrando splats para tours web:
+
+🔹 https://playcanvas.com
+
+Busca:
+
+gaussian splat demo
+
+real estate splat
+
+✅ 6. YouTube: Real Estate Gaussian Splatting
+
+Hay demos increíbles ya aplicados:
+
+Busca en YouTube:
+
+🎥 “Gaussian Splatting Real Estate Tour”
+🎥 “Luma AI house scan”
+🎥 “3DGS interior walkthrough”
+
+Ejemplos muy buenos:
+
+recorridos tipo Matterport pero más livianos
+
+modelos interactivos
+
+🏢 Plataformas tipo Matterport pero con Splats
+
+Estas son startups que ya lo hacen para inmobiliarias:
+
+🔥 1. Beyond Reality
+
+Tours inmobiliarios con splats:
+
+https://beyondreality.ai
+
+🔥 2. Volinga
+
+Splat tours comerciales:
+
+https://volinga.ai
+
+🔥 3. Prevu3D
+
+Captura interiores para real estate:
+
+https://prevu3d.com
+
+
+Ideas de inspiración para tu propio proyecto
+
+🌟 Filtros clásicos + 3D tours
+👉 Ubicación (ciudad / barrio)
+👉 Precio
+👉 Tipo de inmueble
+👉 Tours interactivos 3D o visitas virtuales
+
+💡 Puedes combinar esto con tu propio visor 3D personalizado (como Three.js o Gaussian Splatting) para tener:
+
+✅ miniaturas filtrables
+✅ vista de espacio 3D
+✅ hotspots con información de habitación
+✅ panel de datos (precio, metros, etc.)
+
+
+
+
+ejemplos visuales 
+
+
+1. Emaar Properties Virtual Tours
+
+https://www.emaar.com
+
+2. DAMAC Properties Tours
+
+https://www.damacproperties.com
+
+3. Sobha Realty
+
+https://www.sobharealty.com
+
+4. Dubai Sotheby’s Realty (lujo)
+
+https://www.sothebysrealty.com
+
+5. Matterport Gallery Real Estate Luxury
+
+https://matterport.com/gallery
