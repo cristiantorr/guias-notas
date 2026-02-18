@@ -50,7 +50,16 @@ Outfit-ExtraBold.ttf
 Outfit-Medium.ttf
 
 DESCARGA BD
-sudo mysqldump -u pureblink -p xjd57OhdZ!2jExnd pinnacle_website > backup.sql
+
+define('DB_NAME', 'purebli9_pinnacle_rentals');
+
+
+define('DB_USER', 'purebli9_pinnacle_rentals');
+
+
+define('DB_PASSWORD', 'xjd57OhdZ!2jExnd');
+
+sudo mysqldump -u purebli9_pinnacle_rentals -p xjd57OhdZ!2jExnd purebli9_pinnacle_rentals > backup.sql
 
 sudo mysqldump -u pureblink -p > backup_mynew.sql
 
@@ -86,3 +95,8 @@ du -sh * | sort -hr | head -20
 
 ✅ 8. Ver los archivos más pesados del servidor entero (rápido)
 sudo du -ah /home/bitnami/stack/wordpress | sort -hr | head -30
+
+Borrar backups antiguos:
+
+sudo rm -rf *.zip
+sudo rm -rf *.daf
