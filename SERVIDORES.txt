@@ -59,9 +59,9 @@ define('DB_USER', 'purebli9_pinnacle_rentals');
 
 define('DB_PASSWORD', 'xjd57OhdZ!2jExnd');
 
-sudo mysqldump -u purebli9_pinnacle_rentals -p xjd57OhdZ!2jExnd purebli9_pinnacle_rentals > backup.sql
+ mysqldump -u purebli9_pinnacle_rentals -p  purebli9_pinnacle_rentals > backup.sql
 
-sudo mysqldump -u pureblink -p > backup_mynew.sql
+ mysqldump -u pureblink -p > backup_mynew.sql
 
 scp usuario@IP_DEL_SERVIDOR:/ruta/completa/backup.sql C:\Users\TuUsuario\Downloads\
 
