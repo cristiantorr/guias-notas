@@ -1,0 +1,6 @@
+ffmpeg -i  example1.mp4 frames/frame_%04d.png
+
+ffmpeg -i example1.mp4 -vf fps=2 frames/frame_%04d.png
+
+
+ffmpeg -i example1.mp4 -vf fps=3 -qscale:v 2 frames/frame_%04d.jpg
