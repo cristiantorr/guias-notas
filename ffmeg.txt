@@ -4,3 +4,9 @@ ffmpeg -i example1.mp4 -vf fps=2 frames/frame_%04d.png
 
 
 ffmpeg -i example1.mp4 -vf fps=3 -qscale:v 2 frames/frame_%04d.jpg
+
+ffmpeg -i video.mp4 -vf fps=1.5  folder_output/frame_%05d.png
+
+si lo estas haciendo con jpg:
+
+ffmpeg -i video-model.mp4 -vf fps=1.5 -q:v 1  frames/frame%01d.jpg
