@@ -1,0 +1,11 @@
+OWASP Top 10 Checklist para WordPress (Guía de Seguridad)
+
+Checklist práctica basada en OWASP Top 10 (2021), adaptada a sitios WordPress.
+
+A01 — Broken Access Control (Control de acceso roto)
+- Desactivar listado de directorios (Options -Indexes)
+- Proteger /wp-admin/ con IP o autenticación adicional
+- Revisar roles y permisos de usuarios (Admin, Editor, etc.)
+- Eliminar usuarios sospechosos o desconocidos
+- Evitar que usuarios suban archivos ejecutables
+- Desactivar XML-RPC si no se usa
