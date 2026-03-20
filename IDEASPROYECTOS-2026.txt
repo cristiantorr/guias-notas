@@ -11,3 +11,84 @@
 4 - REACT NATIVE O PHP NATIVE : CREAR APP CON APIS MIT
 
 5 - gOOGLE MAPS: EXPANDIR CONOCIMIENTOS CON GOOGLE MAPS. COMO MAKERS , RUTAS ETC
+
+Desarrollar una aplicación móvil multiplataforma (Android, iOS y web) enfocada en el análisis y mejora del baile estilo salsa mediante inteligencia artificial.
+
+🎯 Objetivo
+
+Permitir a los usuarios subir videos bailando salsa para ser analizados automáticamente, obteniendo retroalimentación técnica, métricas de desempeño y una calificación general.
+
+🔐 Funcionalidades básicas (MVP)
+
+Sistema de autenticación:
+
+Registro de usuarios
+
+Login
+
+Perfil de usuario (historial de análisis, progreso, estadísticas)
+
+Carga de contenido:
+
+Subida de videos desde el dispositivo
+
+Posibilidad de grabar video directamente desde la app
+
+Procesamiento con IA:
+
+Detección de pose y movimiento corporal usando visión por computadora (ej. MediaPipe o modelos similares)
+
+Tracking de puntos clave del cuerpo (pose estimation)
+
+Comparación con patrones de referencia de pasos de salsa
+
+🧠 Análisis y resultados
+
+Evaluación automática del baile:
+
+Precisión de movimientos
+
+Ritmo y sincronización
+
+Postura corporal
+
+Fluidez
+
+Feedback inteligente:
+
+Identificación de errores específicos (ej. pasos incorrectos, descoordinación)
+
+Recomendaciones personalizadas para mejorar
+
+Métricas y estadísticas:
+
+Puntaje general (score)
+
+Gráficas de progreso
+
+Historial de evaluaciones
+
+Indicadores clave de rendimiento
+
+🚀 Enfoque técnico
+
+Uso de inteligencia artificial para análisis automatizado
+
+Implementación de modelos de pose estimation (como MediaPipe)
+
+Backend para procesamiento de video (posiblemente en la nube)
+
+Frontend en React Native  para multiplataforma
+
+
+
+
+📌 Consideraciones futuras (post-MVP)
+
+Entrenamiento personalizado
+
+Clases guiadas
+
+Comparación con bailarines profesionales
+
+Gamificación (logros, niveles, retos)
