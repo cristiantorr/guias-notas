@@ -1,5 +1,5 @@
 
-$ wp search-replace 'https://stg-happycity.smdigitalstage.com' 'http://happy-city.local'
+$ wp search-replace 'https://projects.zentro.app' 'http://production-zentro.local'
 
 wp search-replace --url=https://stg-yokomotor.smdigitalstage.com 'https://stg-yokomotor.smdigitalstage.com' 'http://yokomotor.local' --recurse-objects --network --skip-columns=guid --skip-tables=wp_users
 
