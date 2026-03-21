@@ -59,7 +59,21 @@ define('DB_USER', 'purebli9_pinnacle_rentals');
 
 define('DB_PASSWORD', 'xjd57OhdZ!2jExnd');
 
- mysqldump -u purebli9_pinnacle_rentals -p  purebli9_pinnacle_rentals > backup.sql
+
+define( 'DB_NAME', "pinnacle_website" );
+
+
+define( 'DB_USER', "pureblink" );
+
+
+define( 'DB_PASSWORD', "xjd57OhdZ!2jExnd" );
+
+
+define( 'DB_HOST', "database-1.c9mwqu06qz8h.us-east-2.rds.amazonaws.com" );
+
+
+
+ mysqldump -u pureblink -p  pinnacle_website > backup.sql
 
  mysqldump -u pureblink -p > backup_mynew.sql
 
