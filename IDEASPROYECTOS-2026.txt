@@ -25,6 +25,8 @@ Sistema de autenticación:
 Registro de usuarios
 
 Login
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 Perfil de usuario (historial de análisis, progreso, estadísticas)
 
