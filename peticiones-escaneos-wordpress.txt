@@ -1,0 +1,8 @@
+RESUMEN — PETICIONES Y ESCANEOS EN WORDPRESS
+
+Estado actual:
+Se detectaron múltiples peticiones automáticas a archivos que no existen (.aspx, wallets, slots, etc.).
+El servidor respondió con error 404 en todos los casos.
+Esto indica escaneos automáticos de bots buscando vulnerabilidades, no un ataque exitoso.
+
+Nivel de riesgo:
