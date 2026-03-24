@@ -6,3 +6,14 @@ El servidor respondió con error 404 en todos los casos.
 Esto indica escaneos automáticos de bots buscando vulnerabilidades, no un ataque exitoso.
 
 Nivel de riesgo:
+
+Acciones recomendadas para prevenir ataques:
+
+Activar limitación de peticiones (Rate Limiting)
+Bloquear IP después de 10 errores 404 en 1 minuto.
+Limitar requests por minuto.
+Bloquear extensiones sospechosas
+.aspx
+.jsp
+.cgi
+.ashx
