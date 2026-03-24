@@ -6,14 +6,60 @@ El servidor respondió con error 404 en todos los casos.
 Esto indica escaneos automáticos de bots buscando vulnerabilidades, no un ataque exitoso.
 
 Nivel de riesgo:
+BAJO — mientras las respuestas sigan siendo 404 y no haya ejecución de código.
 
 Acciones recomendadas para prevenir ataques:
 
-Activar limitación de peticiones (Rate Limiting)
-Bloquear IP después de 10 errores 404 en 1 minuto.
-Limitar requests por minuto.
-Bloquear extensiones sospechosas
-.aspx
-.jsp
-.cgi
-.ashx
+1. Activar limitación de peticiones (Rate Limiting)
+
+   * Bloquear IP después de 10 errores 404 en 1 minuto.
+   * Limitar requests por minuto.
+
+2. Bloquear extensiones sospechosas
+
+   * .aspx
+   * .jsp
+   * .cgi
+   * .ashx
+
+3. Bloquear XML-RPC si no se usa
+
+   * Evita ataques de fuerza bruta.
+
+4. Activar protección de login
+
+   * reCAPTCHA
+   * 2FA (doble autenticación)
+   * Limitar intentos de login
+
+5. Proteger carpetas sensibles
+   Ejemplo:
+   /wp-content/backups-dup-pr/
+   Debe responder:
+   403 Forbidden
+
+6. Usar firewall o WAF
+   Recomendado:
+
+   * Wordfence
+   * Defender
+   * Cloudflare
+
+7. Monitorear logs regularmente
+   Buscar:
+
+   * muchos 404 desde la misma IP
+   * peticiones repetidas
+   * accesos a archivos inexistentes
+
+Conclusión:
+El comportamiento observado corresponde a escaneos automáticos comunes en internet.
+El sitio está respondiendo correctamente con errores 404.
+Se recomienda aplicar las medidas anteriores para fortalecer la seguridad preventiva.
+
+Indicador clave de seguridad:
+Mientras los logs muestren:
+404_error
+
+Significa:
+El sistema está bloqueando correctamente las peticiones.
