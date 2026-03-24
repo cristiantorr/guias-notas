@@ -53,3 +53,14 @@ Acciones recomendadas para prevenir ataques:
    * accesos a archivos inexistentes
 
 
+Conclusión:
+El comportamiento observado corresponde a escaneos automáticos comunes en internet.
+El sitio está respondiendo correctamente con errores 404.
+Se recomienda aplicar las medidas anteriores para fortalecer la seguridad preventiva.
+
+Indicador clave de seguridad:
+Mientras los logs muestren:
+404_error
+
+Significa:
+El sistema está bloqueando correctamente las peticiones.
