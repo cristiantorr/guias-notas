@@ -82,7 +82,7 @@ define('DB_USER', 'purebli9_WPFJM');
 
 /** Database password */
 
-define('DB_PASSWORD', 'jM>2Bf7Fx?3[8AL=^');
+
 
  mysqldump -u USER -p  DB_NAME > backup.sql
 
