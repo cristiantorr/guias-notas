@@ -80,8 +80,7 @@ define('DB_NAME', 'purebli9_WPFJM');
 define('DB_USER', 'purebli9_WPFJM');
 
 
-/** Database password */
-
+/** Database password download server*/
 
 
  mysqldump -u USER -p  DB_NAME > backup.sql
