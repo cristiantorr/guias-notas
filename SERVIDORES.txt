@@ -26,7 +26,7 @@ sudo chown -R bitnami:daemon .
 
 COMPRIMIR DENTRO DEL SERVIDOR 
 
-zip -r  pinnacle_template.zip  pinnacle_template
+zip -r  sorbara.zip  sorbara
 
 DESCOMPRIMIR
 unzip zentro-theme.zip
@@ -40,6 +40,7 @@ scp -i "C:/Users/User/.ssh/zentro.pem" bitnami@44.224.173.167:~/stack/wordpress/
 scp -i "C:/Users/User/.ssh/pinnacle.pem" bitnami@3.144.121.122:~/stack/wordpress/backup.sql  "C:\Users\User\Local Sites\pinnacle-production\app"
 
 scp -i "C:/Users/User/.ssh/pinnacle.pem" bitnami@3.144.121.122:~/stack/wordpress/backup.sql  "C:\Users\User\Local Sites\rentals"
+ssh purebli9@69.195.77.73:~/stack/wordpress/backup.sql  "C:\Users\User\Local Sites\pinnacle-production\app"
 
 ELIMINAR CARPETA COMPRIMIDA 
 
@@ -71,9 +72,19 @@ define( 'DB_PASSWORD', "xjd57OhdZ!2jExnd" );
 
 define( 'DB_HOST', "database-1.c9mwqu06qz8h.us-east-2.rds.amazonaws.com" );
 
+define('DB_NAME', 'purebli9_WPFJM');
 
 
- mysqldump -u pureblink -p  pinnacle_website > backup.sql
+/** Database username */
+
+define('DB_USER', 'purebli9_WPFJM');
+
+
+/** Database password */
+
+define('DB_PASSWORD', 'jM>2Bf7Fx?3[8AL=^');
+
+ mysqldump -u USER -p  DB_NAME > backup.sql
 
  mysqldump -u pureblink -p > backup_mynew.sql
 
