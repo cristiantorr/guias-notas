@@ -86,7 +86,6 @@ define('DB_USER', 'purebli9_WPFJM');
 
  mysqldump -u USER -p  DB_NAME > backup.sql
 
- mysqldump -u pureblink -p > backup_mynew.sql
 
 scp usuario@IP_DEL_SERVIDOR:/ruta/completa/backup.sql C:\Users\TuUsuario\Downloads\
 
