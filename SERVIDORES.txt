@@ -52,27 +52,7 @@ Outfit-Medium.ttf
 
 DESCARGA BD
 
-define('DB_NAME', 'purebli9_pinnacle_rentals');
 
-
-define('DB_USER', 'purebli9_pinnacle_rentals');
-
-
-define('DB_PASSWORD', 'xjd57OhdZ!2jExnd');
-
-
-define( 'DB_NAME', "pinnacle_website" );
-
-
-define( 'DB_USER', "pureblink" );
-
-
-define( 'DB_PASSWORD', "xjd57OhdZ!2jExnd" );
-
-
-define( 'DB_HOST', "database-1.c9mwqu06qz8h.us-east-2.rds.amazonaws.com" );
-
-define('DB_NAME', 'purebli9_WPFJM');
 
 
 /** Database username */
