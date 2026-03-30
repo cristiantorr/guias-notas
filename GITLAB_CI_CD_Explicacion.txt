@@ -12,7 +12,7 @@ CD (Continuous Delivery o Continuous Deployment):
 Automatiza el proceso de llevar tu código a producción o a un entorno de prueba.
 
 -----------------------------------------------------
-Flujo básico de CI/CD
+Flujo básico de CI/CD gitlab
 
 1. Haces un push a tu rama en GitLab.
 2. GitLab ejecuta un pipeline que puede:
