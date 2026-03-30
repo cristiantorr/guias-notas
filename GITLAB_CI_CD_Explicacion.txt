@@ -1,6 +1,10 @@
+GITLAB O BITBUCKET
+
 CI/CD: Integración Continua y Entrega/Despliegue Continuo
 
 CI/CD significa Integración Continua (CI) y Entrega/Despliegue Continuo (CD). Es una práctica clave en el desarrollo moderno de software que ayuda a automatizar pruebas, integraciones y despliegues.
+
+
 
 -----------------------------------------------------
 ¿Qué es CI/CD?
@@ -23,7 +27,7 @@ Flujo básico de CI/CD gitlab
 3. Si todo pasa, el código se aprueba o se despliega automáticamente.
 
 -----------------------------------------------------
-¿Dónde se configura?
+¿Dónde se configura ?
 
 En GitLab, CI/CD se configura con un archivo en la raíz del repositorio llamado aqui:
 
