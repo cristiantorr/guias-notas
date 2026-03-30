@@ -25,9 +25,9 @@ Flujo básico de CI/CD gitlab
 -----------------------------------------------------
 ¿Dónde se configura?
 
-En GitLab, CI/CD se configura con un archivo en la raíz del repositorio llamado:
+En GitLab, CI/CD se configura con un archivo en la raíz del repositorio llamado aqui:
 
-.gitlab-ci.yml
+.gitlab-ci.yml 
 
 Ejemplo básico para un proyecto Node.js:
 
@@ -42,7 +42,7 @@ test_job:
     - npm test
 
 -----------------------------------------------------
-Beneficios
+Beneficios de esto
 
 - Encuentras errores rápidamente.
 - Evitas el clásico “funciona en mi máquina”.
