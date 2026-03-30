@@ -20,7 +20,7 @@ Flujo básico de CI/CD
    - Analizar la calidad del código.
    - Compilar el proyecto si es necesario.
    - Empaquetar y desplegar el código a un servidor.
-3. Si todo pasa ✅, el código se aprueba o se despliega automáticamente.
+3. Si todo pasa, el código se aprueba o se despliega automáticamente.
 
 -----------------------------------------------------
 ¿Dónde se configura?
