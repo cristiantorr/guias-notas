@@ -10,3 +10,8 @@ información con enfoque en Inteligencia Artificial.
 1 Machine Learning básico.
 2 Uso de APIs de IA (OpenAI, etc).
 3 Automatización con IA.
+3. Herramientas Clave
+1 Python, Node.js.
+2 TensorFlow o PyTorch (opcional al inicio).
+3 Docker (nivel intermedio).
+4. Portafolio
