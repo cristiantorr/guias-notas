@@ -1,0 +1,7 @@
+Guía: Cómo Preparar tu Perfil para Trabajar con IA en
+TI
+Esta guía te ayudará a construir un perfil competitivo para entrar al mundo laboral en tecnologías de la
+información con enfoque en Inteligencia Artificial.
+1. Fundamentos Técnicos
+1 Aprende programación (Python es clave).
+2 Bases de datos (SQL y NoSQL).
