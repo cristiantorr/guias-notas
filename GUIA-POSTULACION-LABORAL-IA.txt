@@ -15,3 +15,7 @@ información con enfoque en Inteligencia Artificial.
 2 TensorFlow o PyTorch (opcional al inicio).
 3 Docker (nivel intermedio).
 4. Portafolio
+1 Crea proyectos reales (chatbots, automatizaciones).
+2 Sube tu código a GitHub.
+3 Documenta tus proyectos.
+5. Perfil Profesional
