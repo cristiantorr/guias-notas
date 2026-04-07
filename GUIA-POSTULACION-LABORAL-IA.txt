@@ -5,3 +5,8 @@ información con enfoque en Inteligencia Artificial.
 1. Fundamentos Técnicos
 1 Aprende programación (Python es clave).
 2 Bases de datos (SQL y NoSQL).
+3 Control de versiones (Git y GitHub).
+2. Conocimientos en IA
+1 Machine Learning básico.
+2 Uso de APIs de IA (OpenAI, etc).
+3 Automatización con IA.
