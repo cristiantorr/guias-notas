@@ -26,13 +26,15 @@ sudo chown -R bitnami:daemon .
 
 COMPRIMIR DENTRO DEL SERVIDOR 
 
-zip -r  sorbara.zip  sorbara
+zip -r  sundialhomes.zip  sundialhomes
 
 DESCOMPRIMIR
 unzip zentro-theme.zip
-
+ zip -r website_8b786ab1.zip zentroapp
 zip -r uploads.zip uploads
-DESCARGAR DESDE EL PC 
+DESCARGAR DESDE EL PC
+
+wp user create pureblink cristian.torres@pureblink.com --role=administrator --user_pass=7%PHYa1oCN
 
 scp -i "C:/Users/User/.ssh/zentro.pem" bitnami@44.224.173.167:~/stack/wordpress/wp-content/themes/zentro-theme.zip "C:\Users\User\Desktop\zentro"
 scp -i "C:/Users/User/.ssh/zentro.pem" bitnami@44.224.173.167:~/stack/wordpress/wp-content/uploads.zip "C:\Users\User\Local Sites\pureblink-zentro\app\public\wp-content"
@@ -40,7 +42,7 @@ scp -i "C:/Users/User/.ssh/zentro.pem" bitnami@44.224.173.167:~/stack/wordpress/
 scp -i "C:/Users/User/.ssh/pinnacle.pem" bitnami@3.144.121.122:~/stack/wordpress/backup.sql  "C:\Users\User\Local Sites\pinnacle-production\app"
 
 scp -i "C:/Users/User/.ssh/pinnacle.pem" bitnami@3.144.121.122:~/stack/wordpress/backup.sql  "C:\Users\User\Local Sites\rentals"
-ssh purebli9@69.195.77.73:~/stack/wordpress/backup.sql  "C:\Users\User\Local Sites\pinnacle-production\app"
+scp -r purebli9@69.195.77.73:/home2/purebli9/public_html/production/sundialhomes.zip C:\Users\User\Downloads
 
 ELIMINAR CARPETA COMPRIMIDA 
 
@@ -57,13 +59,23 @@ DESCARGA BD
 
 /** Database username */
 
-define('DB_USER', 'purebli9_WPFJM');
+define('DB_NAME', 'purebli9_wordpress5f6');
+
+
+/** MySQL database username */
+
+define('DB_USER', 'purebli9_word5f6');
+
+
+/** MySQL database password */
+
+define('DB_PASSWORD', 'fQ48gx4EYker');
 
 
 /** Database password download server*/
 
 
- mysqldump -u USER -p  DB_NAME > backup.sql
+ mysqldump -u purebli9_word5f6 -p  purebli9_wordpress5f6 > backup.sql
 
 
 scp usuario@IP_DEL_SERVIDOR:/ruta/completa/backup.sql C:\Users\TuUsuario\Downloads\
@@ -103,3 +115,25 @@ Borrar backups antiguos:
 
 sudo rm -rf *.zip
 sudo rm -rf *.daf
+
+
+* ¿Cuánto desea solicitar?  28.000.000
+* ¿A qué plazo? El plazo sería a 72 meses    
+* ¿Cuál es la finalidad del crédito? (Por favor indicar a detalle, no solo respuesta de Libre inversión)  
+
+La finalidad que tengo del credito es Atender necesidades familiares prioritarias, especialmente gastos de salud y estabilidad económica durante un periodo de dificultades laborales.
+
+* ¿Tiene reportes negativos en centrales de riesgo? No, no tengo reportes negativos y siempre he cumplido puntualmente con mis obligaciones financieras.
+* ¿En qué empresa labora y hace cuánto? Laboro en una empresa de canada llamada pureblink (www.pureblink.com
+), hace ya un año.
+* ¿Qué tipo de contrato tiene? Tengo un contrato  de prestación de servicios o
+Contrato de contratista independiente
+* ¿Cuánto es su salario? Mi salario actualmente es de 5'000.000
+
+
+Me confirma por favor estos datos , ya te envió de nuevo la información al correo y te envió los requisitos 
+ 
+* Cedula : 1020435566
+ • Nombre Completo : Cristian Alonso Torres Patiño
+ • Celular : 3024505859
+ • Correo electrónico : ps4cristiantorr@gmail.com
