@@ -1,4 +1,4 @@
-t3.medium - para aws
+t3.medium - para aws notas
 
 Tipo: Burstable general-purpose
 vCPU: 2
