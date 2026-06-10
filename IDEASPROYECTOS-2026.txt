@@ -4,6 +4,8 @@
 
 3 -  HEADLESS WORDPRESSS (SEGUIR EL QUE TENÍA) 
 
+
+
 3 - LARAVEL : HACER APLICACIÓN CON LARAVEL E INSTALAR ADMIN PANEL Filament U OTRO
 
 4 - IAS LLM GRATIS : https://github.com/cheahjs/free-llm-api-resources
