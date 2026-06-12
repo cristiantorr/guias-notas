@@ -7,7 +7,10 @@ CI/CD significa Integración Continua (CI) y Entrega/Despliegue Continuo (CD). E
 
 
 -----------------------------------------------------
+¿Qué es CI/CD?
 
+CI (Continuous Integration): 
+Prueba automáticamente tu código cada vez que haces un push o merge request. Detecta errores temprano.
 
 CD (Continuous Delivery o Continuous Deployment): 
 Automatiza el proceso de llevar tu código a producción o a un entorno de prueba.
