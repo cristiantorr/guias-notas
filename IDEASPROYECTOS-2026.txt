@@ -4,7 +4,12 @@
 
 3 -  HEADLESS WORDPRESSS (SEGUIR EL QUE TENÍA) 
 
+4 - Node.js + Express
+APIs REST
+Autenticación (JWT)
+Bases de datos (MongoDB / PostgreSQL)
 
+3 - LARAVEL : HACER APLICACIÓN CON LARAVEL E INSTALAR ADMIN PANEL Filament U OTRO
 
 4 - IAS LLM GRATIS : https://github.com/cheahjs/free-llm-api-resources
 
