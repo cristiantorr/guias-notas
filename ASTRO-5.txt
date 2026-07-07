@@ -1,6 +1,15 @@
 * Crear proyecto comn astro
 
+npm create astro@latest 
 
+* Empezar proyecto para luego inicializarlo
+npm run dev
+
+* Instalar tailwind 
+npx astro add tailwind
+
+* Los console.log verlos en las terminales 
+on
 e et* Para limpiar cache o deprono no encuentra los tipos y salen errores ejecutar  ejemplo:
 
 AQUÍ SALE ERROR EN EL PARAMETRÓ book , porque no encuentra el tipo de datos
