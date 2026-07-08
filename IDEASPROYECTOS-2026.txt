@@ -1,4 +1,4 @@
-1 - NEXT JS Y STRAPI : APLICACIÓN BLOG MIDUDEV.
+1 - NEXT JS Y STRAPI : APLICACIÓN BLOG MIDUDEV. ( estado OK)
 
 1 -2 Le pasé a Claude (Fable 5) 8 fotos de nuestra oficina y un plano dibujado en Excalidraw… y me la devolvió entera en 3D, navegable en primera persona, corriendo en el navegador. ( FOTOS DE LA CASA PARA PASARLO A 3D CON CLOUD)
 
