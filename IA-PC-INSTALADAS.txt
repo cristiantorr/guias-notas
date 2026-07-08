@@ -1,0 +1,46 @@
+Modelo OLLAMA
+
+1. Verifica que Ollama esté instalado
+
+Abre PowerShell y escribe:
+
+ollama --version
+
+Si muestra una versión, por ejemplo:
+
+ollama version 0.10.x
+
+entonces ya está listo.
+
+2. Ver los modelos instalados
+ollama list
+3. Descargar un modelo (solo la primera vez)
+
+Por ejemplo:
+
+ollama pull qwen3:4b
+
+o
+
+ollama pull qwen3:8b
+4. Ejecutar el modelo
+ollama run qwen3:4b
+
+Verás algo como:
+
+>>> Send a message (/? for help)
+
+Ya puedes escribir preguntas:
+
+Explícame qué es React.
+5. Salir
+
+Presiona:
+
+Ctrl + D
+
+o escribe:
+
+/bye
+
+---------------------
