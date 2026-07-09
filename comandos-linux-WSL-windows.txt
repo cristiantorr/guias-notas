@@ -1,9 +1,13 @@
 COMANDOS:
 
-- ABRIR TERMINAL : wsl --user root
+- INSTALAR DISTRIBUCCIÓN UBUNTO : wsl --install -d Ubuntu
+- VER DISTRIBUCIONES DE LINUX INSTALADAS : wsl -l -v
+- PONER LA DISTRIBUCIÓN QUE POR DEFECTO SE EJECUTE : wsl --set-default Ubuntu
+- REINICIAR SERVICIOS WSL : wsl --shutdown
+- ABRIR TERMINAL : wsl -d (nombre de la distribución) --user root
 - CAMBIAR PASSWORD DE USUARIO: passwd LOQUESEA AQUÍ
 - VERIFICAR SESIÓN DE USUARIO: whoami para root
-
+- VERIFICAR EN QUE WSL NAME ESTOY ACTUALMENTE : cat /etc/os-release
 ---
 
 - DATE : Muestra fecha actual
