@@ -1,0 +1,13 @@
+OLLAMA 
+
+EJECUTAR EL MODELO EJEMPLO : ollama run qwen3.5:4b
+SALIR DE EJECUCIÓN : /exit
+- 
+
+OPENCODE 
+
+- EJECUTAR OPEN CODE : opencode-ai init
+- EJECUTAR AYUDA : opencode-ai --help
+- COMANDO PARA EJECUTARLO : npx opencode-ai
+- COMANDO PARA AYUDAS : npx opencode-ai --help
+- COMANDO PARA CREAR EL INIT (README) : /init hace agents.md es el resumen de la app
