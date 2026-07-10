@@ -1,0 +1,93 @@
+Paso 1: Respaldos Completos (La Regla de Oro)
+Frecuencia: Diaria o semanal (automatizada).
+
+Antes de actualizar cualquier plugin, tema o el núcleo de WordPress, es obligatorio tener una copia de seguridad externa (fuera del servidor de producción).
+
+UpdraftPlus: El estándar de la industria. Permite automatizar respaldos de la base de datos y archivos, y enviarlos directamente a la nube (Google Drive, AWS S3, Dropbox).
+
+All-in-One WP Migration: Ideal si necesitas hacer un respaldo rápido manual para clonar o restaurar el sitio en segundos en caso de que algo falle tras una actualización.
+
+-----------
+
+Paso 2: Optimización de Rendimiento y Caché
+Frecuencia: Mensual.
+
+El almacenamiento en caché reduce drásticamente el tiempo de carga del sitio web. No es necesario sobrecargar el sitio con cinco plugins de rendimiento; con una o dos herramientas robustas es suficiente.
+
+LiteSpeed Cache (LSCache): Si el servidor usa tecnología LiteSpeed (muy común hoy en día), este plugin es el mejor. Gestiona caché a nivel de servidor, optimiza imágenes, minifica CSS/JS y limpia la base de datos de forma nativa.
+
+WP Rocket: Si estás en un servidor Apache o Nginx tradicional, es la mejor opción de pago. Automatiza la carga diferida (lazy load), optimización de fuentes y retraso de ejecución de JavaScript sin romper el diseño.
+
+WP-Optimize: Excelente opción gratuita enfocada en limpiar y compactar la base de datos (elimina revisiones de entradas antiguas, borradores automáticos y comentarios de spam).
+
+----------
+
+Paso 3: Monitoreo de Enlaces Rotos y Redirecciones
+Frecuencia: Quincenal o mensual.
+
+Los enlaces rotos (errores 404) destruyen la experiencia del usuario y afectan negativamente al SEO.
+
+Broken Link Checker: Monitorea el sitio constantemente en busca de enlaces internos o externos caídos.
+
+⚠️ Consejo Técnico de Rendimiento: Este plugin consume muchos recursos del servidor si se deja activo todo el tiempo. Lo ideal es activarlo, correr el análisis, corregir los enlaces rotos desde su panel y luego desactivarlo hasta el próximo mantenimiento.
+
+Rank Math SEO / Yoast SEO: Ambos incluyen gestores de redirecciones automáticos. Si cambias la URL de una página, el plugin crea la redirección 301 de inmediato para evitar el error 404.
+
+-----------
+
+
+Paso 4: Seguridad y Monitoreo de Malware
+Frecuencia: Monitoreo en tiempo real.
+
+WordPress es el CMS más atacado del mundo. El mantenimiento debe incluir auditorías de seguridad periódicas.
+
+Wordfence Security: Incluye un firewall a nivel de endpoint y un escáner de malware que revisa la integridad del núcleo de WordPress, temas y plugins en comparación con el repositorio oficial.
+
+Solid Security (Antes iThemes Security): Excelente para endurecer la seguridad del sitio (cambiar la URL de login, forzar contraseñas seguras, bloquear ataques de fuerza bruta y añadir autenticación de dos factores).
+
+WP Defender: WP Defender (cuyo nombre oficial es Defender Security) es un popular plugin de seguridad para WordPress desarrollado por WPMU DEV. Su función principal es proteger tu sitio web contra hackers, bots maliciosos, malware y ataques de fuerza bruta mediante herramientas de firewall, escaneo y bloqueo de IP.
+
+-------
+
+aso 5: Actualizaciones Inteligentes
+Frecuencia: Semanal.
+
+Mantener todo al día soluciona vulnerabilidades y mejora la compatibilidad de las tecnologías.
+
+Actualiza en orden: Primero actualiza las traducciones, luego los plugins de uno en uno, después el tema y finalmente el núcleo de WordPress.
+
+Entorno de pruebas (Staging): Para proyectos grandes o e-commerce, nunca actualices directo en producción. Utiliza herramientas como WP Staging o las opciones de clonación del hosting para probar que todo funcione bien con las versiones más recientes de PHP, React o librerías del backend.
+
+-------
+
+VENDER A CLIENTES
+
+
+Argumentos de venta infalibles (Cómo convencer al cliente)
+Cuando un cliente te diga: "¿Por qué debería pagar esto mensualmente si mi web ya funciona bien?", tú le respondes con estos tres argumentos de negocio:
+
+La analogía del carro: "Una página web es como un carro. Si lo sacas del concesionario y nunca le cambias el aceite ni revisas los frenos, eventualmente se va a varar en el peor momento. El mantenimiento preventivo evita que tu web deje de vender por un fallo técnico".
+
+El costo de recuperación: "Si tu web es hackeada o un plugin se rompe y tumba el sitio, arreglar la emergencia te costará tres o cuatro veces más que pagar una mensualidad de prevención, sin contar las horas o días que tu negocio estará invisible en Google".
+
+Seguridad de datos: "Si manejas formularios de contacto o datos de clientes, tener copias de seguridad automáticas y un firewall activo no es un lujo, es una obligación legal y de confianza para tu marca".
+
+El entregable: El Informe Mensual
+Para que el cliente pague feliz mes a mes, necesita ver que estás haciendo algo. Al final de cada mes, envíales un reporte simple de una página (puedes automatizarlo con herramientas o armar una plantilla rápida) que diga:
+
+✅ Copias de seguridad realizadas con éxito: [Número] respaldos almacenados de forma segura.
+
+✅ Actualizaciones del sistema: [Número] plugins y temas optimizados a su última versión segura.
+
+✅ Salud del sitio: 0 amenazas de malware encontradas. Sitio 100% limpio.
+
+✅ Enlaces rotos corregidos: [Número] optimizaciones de enlaces para mejorar el SEO en Google.
+
+⚡ Velocidad de carga: Tu sitio web carga en [X] segundos (Rendimiento Óptimo).
+
+-------------
+
+  COBRO Y TIEMPOS
+
+
+  Cuánto cobrar (Tarifas Mensuales Recomendadas)Plan 1: Esencial (Webs corporativas, portafolios o landings)  Precio: $150.000 a $300.000 COP / mes.  Para quién: Pequeñas empresas o profesionales que solo quieren que su web no se caiga y esté protegida.  Plan 2: Pro / E-commerce (Tiendas virtuales o webs de agencias)  Precio: $400.000 a $800.000 COP / mes.  Para quién: Negocios con pasarelas de pago (PSE, Wompi), carritos de compra o sitios con tráfico constante que no pueden darse el lujo de fallar ni una hora.  💡 Tip Comercial: Ofréceles un 10% o 15% de descuento si pagan el año por adelantado. Esto te asegura flujo de caja inmediato y amarra al cliente a largo plazo.  ⏳ ¿Qué tiempo toma hacer esto?La magia del mantenimiento en WordPress es que el 80% del trabajo se automatiza con los plugins correctos, por lo que tu tiempo real invertido es bajo, pero el valor que percibe el cliente es alto.El tiempo se divide de dos formas:1. Tiempo de configuración inicial (Se hace una sola vez)Duración: 2 a 3 horas.Aquí es donde instalas, conectas y dejas programados los plugins (configurar los respaldos automáticos en la nube con UpdraftPlus, activar el firewall de Wordfence, configurar las reglas de caché y el limpiador de base de datos).2. Tiempo de rutina mensual (El mantenimiento real)Duración: 1 a 2 horas al mes por cliente.Cómo lo distribuyes:Semanal (15 minutos): Revisas rápido el panel para ejecutar actualizaciones de plugins que requieran supervisión y chequear que los respaldos se estén guardando bien.Fin de mes (30 minutos): Activas el Broken Link Checker, corriges los enlaces rotos, corres una limpieza profunda de base de datos, revisas el reporte de seguridad y generas el informe en PDF para enviárselo al cliente.Si tienes 5 clientes en plan Pro, estarás ganando entre $2'000.000 y $4'000.000 COP mensuales fijos invirtiendo menos de 10 horas de trabajo real al mes. ¡Es un servicio sumamente escalable!
