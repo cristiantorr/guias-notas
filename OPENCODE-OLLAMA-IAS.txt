@@ -11,3 +11,7 @@ OPENCODE
 - COMANDO PARA EJECUTARLO : npx opencode-ai
 - COMANDO PARA AYUDAS : npx opencode-ai --help
 - COMANDO PARA CREAR EL INIT (README) : /init hace agents.md es el resumen de la app
+
+
+
+
