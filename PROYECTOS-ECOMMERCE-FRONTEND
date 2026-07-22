@@ -1,0 +1,17 @@
+Proyectos reales y código fuente en GitHu 
+bw3bdesign / nextjs-woocommerce 
+Qué incluye: Un e-commerce moderno configurado con React 19, Next.js 16 y TypeScript.Por qué sirve: Se conecta directamente a la API GraphQL de WooCommerce utilizando un carrito gestionado por Zustand y soporte para productos simples y variables. Es perfecto para ver cómo estructurar las llamadas de datos de forma limpia.
+
+Invizo / woonextQué incluye: Una de las plantillas más populares en la comunidad de código abierto para tiendas de comercio electrónico desacopladas.Por qué sirve: Cuenta con un diseño enfocado en la velocidad utilizando Tailwind CSS y ya viene configurada para integrarse rápidamente con los webhooks de WordPress. 
+
+bigscoots / magic-headless-wpQué incluye: Ejemplo funcional utilizando React 18 puro con Vite, montado y optimizado para la infraestructura Edge de Cloudflare.Por qué sirve: Muestra cómo gestionar un carrito de compras del lado del cliente mediante la Context API clásica de React sin depender obligatoriamente de un framework como Next.js.
+
+Estructura típica que debes analizar en estos ejemplos
+
+Cuando descargues o explores estos repositorios, presta atención a cómo solucionan los tres flujos críticos de un e-commerce desacoplado:
+
+La Conexión de Datos (El puente): Observa cómo configuran el endpoint en el archivo .env utilizando el plugin WPGraphQL junto con WooGraphQL. Esto evita usar la REST API tradicional y permite traer productos, precios e imágenes en una sola consulta estructurada.
+
+Gestión del Carrito de Compras: En WordPress clásico, las sesiones del carrito dependen de las cookies de PHP. En estos ejemplos de React, verás que el carrito se guarda localmente usando localStorage o estados globales de React, enviando los datos a WordPress únicamente cuando el usuario va a pagar.
+
+La Pasarela de Pago (Checkout): La mayoría de proyectos avanzados procesan el pago directamente desde React usando los SDK de Stripe o PayPal, aunque las soluciones más rápidas e iniciales redirigen al usuario al checkout nativo de WooCommerce pasando los parámetros del carrito por la URL.
